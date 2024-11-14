@@ -86,7 +86,12 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     vehiculo vehiculos[1000];
     Cliente clientes[10000];
     repuesto repuestos[1000];
-    
+    int cantidadVehiculos;
+    int cantidadClientes;
+    int cantidadRepuestos;
+
+    cout<< "Datos del vehiculo: \n";
+
 
 
 
