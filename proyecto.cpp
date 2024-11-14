@@ -65,6 +65,22 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     ifstream archivo("Repuestos.csv");
     string linea;
     cantidad= 0;
+    while (getline(archivo, linea) && cantidad < 1000)
+    {
+        stringstream;
+        stringstream ss(linea);
+        getline(ss, repuestos[cantidad].modelo_repuesto, ',');
+        getline(ss, repuestos[cantidad].marca_repuesto, ',');
+        getline(ss, repuestos[cantidad].nombre_repuesto, ','); 
+        getline(ss, repuestos[cantidad].modelo_carro, ','); 
+        ss >> repuestos[cantidad].year_auto; ss.ignore(1);
+         ss >> repuestos[cantidad].precio; ss.ignore(1); 
+         ss >> repuestos[cantidad].existencias; cantidad++;
+    }
+    archivo.close();
+
+    }
+    
     
 
 
