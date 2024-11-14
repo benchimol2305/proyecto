@@ -67,7 +67,6 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     cantidad= 0;
     while (getline(archivo, linea) && cantidad < 1000)
     {
-        stringstream;
         stringstream ss(linea);
         getline(ss, repuestos[cantidad].modelo_repuesto, ',');
         getline(ss, repuestos[cantidad].marca_repuesto, ',');
@@ -127,7 +126,7 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
          << repuestos[i].existencias << endl;
 
    }
-   
+
 
     }
 
