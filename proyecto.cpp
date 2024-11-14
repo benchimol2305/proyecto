@@ -41,7 +41,26 @@ float precio;
 bool existencias;
 };
 void leervehiculos(vehiculo vehiculos[], int&cantidad){
-    ifstream("Vehiculos.csv");
+    ifstream archivo("Vehiculos.csv");
     string linea;
     cantidad=0;
-}
+    while (getline(archivo, linea) && cantidad < 100) {
+        stringstream ss(linea);
+        getline(ss, vehiculos[cantidad].modelo, ',');
+        getline(ss, vehiculos[cantidad].marca, ',');
+        getline(ss, vehiculos[cantidad].placa, ',');
+        getline(ss, vehiculos[cantidad].color, ',');
+        ss >> vehiculos[cantidad].year; ss.ignore(1);
+        ss >> vehiculos[cantidad].kilometraje; ss.ignore(1);
+        ss >> vehiculos[cantidad].rentado; ss.ignore(1);
+        getline(ss, vehiculos[cantidad].motor, ',');
+        ss >> vehiculos[cantidad].precio_renta; ss.ignore(1);
+        getline(ss, vehiculos[cantidad].cedula_cliente, ',');
+        getline(ss, vehiculos[cantidad].fecha_entrega, ',');
+        cantidad++;
+    }
+    archivo.close();
+    
+
+
+
