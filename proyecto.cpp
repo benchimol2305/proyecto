@@ -80,14 +80,19 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     archivo.close();
 
     }
+
+
+   int main (){
+    vehiculo vehiculos[1000];
+    Cliente clientes[10000];
+    repuesto repuestos[1000];
     
-    
 
 
 
+   }                                                                                                                                                                                     
 
 
-}
 
 
 
