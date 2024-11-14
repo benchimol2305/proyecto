@@ -21,11 +21,22 @@ string fecha_entrega;
 
 struct Cliente
 {
-    string edula;
+    string cedula;
     string nombre;
     string apellido;
     string email;
     int cantidad_vehiculos_rentados;
     bool activo;
     string direccion;
+};
+
+struct repuesto
+{
+string modelo_repuesto;
+string marca_repuesto;
+string nombre_repuesto;
+string modelo_carro;
+int year_auto;
+float precio;
+bool existencias;
 };
