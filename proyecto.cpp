@@ -40,3 +40,8 @@ int year_auto;
 float precio;
 bool existencias;
 };
+void leervehiculos(vehiculo vehiculos[], int&cantidad){
+    ifstream("Vehiculos.csv");
+    string linea;
+    cantidad=0;
+}
