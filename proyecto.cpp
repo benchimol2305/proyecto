@@ -18,3 +18,14 @@ float precio_renta;
 string cedula_cliente;
 string fecha_entrega;
 };
+
+struct Cliente
+{
+    string edula;
+    string nombre;
+    string apellido;
+    string email;
+    int cantidad_vehiculos_rentados;
+    bool activo;
+    string direccion;
+};
