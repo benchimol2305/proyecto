@@ -60,7 +60,18 @@ void leervehiculos(vehiculo vehiculos[], int&cantidad){
         cantidad++;
     }
     archivo.close();
+}
+void leerRepuestos(repuesto repuestos[], int &cantidad){
+    ifstream archivo("Repuestos.csv");
+    string linea;
+    cantidad= 0;
     
+
+
+
+
+
+}
 
 
 
