@@ -106,6 +106,9 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
          << vehiculos[i].fecha_entrega << endl;
 
 
+  cout << "\nDatos de Clientes:\n";
+  
+
 
 
    }                                                                                                                                                                                     
