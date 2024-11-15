@@ -173,6 +173,8 @@ int main (){
             continue;        
 
         }
+        cout<<"desea continuar viendo otro archivo? (s/n): ";
+        cin >> continuar;
     } while (/* condition */);
     
     
