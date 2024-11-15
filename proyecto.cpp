@@ -98,7 +98,7 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     }
 
 
-   int main (){
+int main (){
     vehiculo vehiculos[1000];
     Cliente clientes[10000];
     repuesto repuestos[1000];
@@ -107,5 +107,19 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     int cantidadRepuestos=0;
     int opcion;
     char continuar;
+    
+    do
+    {
+        cout << "¿que archivo desea ver?\n";
+        cout << "1. vehiculos\n";
+        cout << "2. Clientes\n"; 
+        cout << "3. Repuestos\n";
+        cout << "4. Salir\n"; 
+        cout << "Ingrese su opcion: "; 
+        cin >> opcion; 
+        cin.ignore();
+    } while (/* condition */);
+    
+    
 
     
