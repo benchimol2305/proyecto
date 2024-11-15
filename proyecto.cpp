@@ -61,6 +61,23 @@ void leervehiculos(vehiculo vehiculos[], int&cantidad){
     }
     archivo.close();
 }
+void leerClientes(Cliente clientes[], int &cantidad) {
+    ifstream archivo("Clientes.csv");
+    string linea; 
+    cantidad = 0;
+    while (getline(archivo, linea) && cantidad < 100) { 
+        stringstream ss(linea); 
+        getline(ss, clientes[cantidad].cedula, ',');
+        getline(ss, clientes[cantidad].nombre, ',');
+        getline(ss, clientes[cantidad].apellido, ','); 
+        getline(ss, clientes[cantidad].email, ','); 
+        ss >> clientes[cantidad].cantidad_vehiculos_rentados; ss.ignore(1); 
+        getline(ss, clientes[cantidad].direccion, ','); 
+        ss >> clientes[cantidad].activo;
+        cantidad++;
+ } 
+archivo.close(); 
+}
 void leerRepuestos(repuesto repuestos[], int &cantidad){
     ifstream archivo("Repuestos.csv");
     string linea;
