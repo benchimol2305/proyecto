@@ -175,7 +175,10 @@ int main (){
         }
         cout<<"desea continuar viendo otro archivo? (s/n): ";
         cin >> continuar;
-    } while (/* condition */);
+    } while (continuar=='s' || continuar== 'S');
+    
+    return 0;
+}    
     
     
 
