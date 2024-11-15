@@ -44,7 +44,7 @@ void leervehiculos(vehiculo vehiculos[], int &cantidad){
     ifstream archivo("Vehiculos.csv");
     string linea;
     cantidad=0;
-    while (getline(archivo, linea) && cantidad < 1) {
+    while (getline(archivo, linea) && cantidad < 1000) {
        stringstream ss(linea);
         getline(ss, vehiculos[cantidad].modelo, ',');
         getline(ss, vehiculos[cantidad].marca, ',');
@@ -71,7 +71,7 @@ void leerClientes(Cliente clientes[], int &cantidad) {
     ifstream archivo("Clientes.csv");
     string linea; 
     cantidad = 0;
-    while (getline(archivo, linea) && cantidad < 2) { 
+    while (getline(archivo, linea) && cantidad < 1000) { 
         stringstream ss(linea); 
         getline(ss, clientes[cantidad].cedula, ',');
         getline(ss, clientes[cantidad].nombre, ',');
@@ -88,7 +88,7 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     ifstream archivo("Repuestos.csv");
     string linea;
     cantidad= 0;
-    while (getline(archivo, linea) && cantidad < 2)
+    while (getline(archivo, linea) && cantidad < 1000)
     {
         stringstream ss(linea);
         getline(ss, repuestos[cantidad].modelo_repuesto, ',');
