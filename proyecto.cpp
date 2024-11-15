@@ -10,11 +10,11 @@ string modelo;
 string marca;
 string placa;
 string color;
-int year;
-int kilometraje;
+string year;
+string kilometraje;
 bool rentado;
 string motor;
-float precio_renta;
+string precio_renta;
 string cedula_cliente;
 string fecha_entrega;
 };
@@ -25,7 +25,7 @@ struct Cliente
     string nombre;
     string apellido;
     string email;
-    int cantidad_vehiculos_rentados;
+    string cantidad_vehiculos_rentados;
     bool activo;
     string direccion;
 };
@@ -36,28 +36,34 @@ string modelo_repuesto;
 string marca_repuesto;
 string nombre_repuesto;
 string modelo_carro;
-int year_auto;
-float precio;
+string year_auto;
+string precio;
 bool existencias;
 };
-void leervehiculos(vehiculo vehiculos[], int&cantidad){
+void leervehiculos(vehiculo vehiculos[], int &cantidad){
     ifstream archivo("Vehiculos.csv");
     string linea;
     cantidad=0;
-    while (getline(archivo, linea) && cantidad < 100) {
-        stringstream ss(linea);
+    while (getline(archivo, linea) && cantidad < 1) {
+       stringstream ss(linea);
         getline(ss, vehiculos[cantidad].modelo, ',');
         getline(ss, vehiculos[cantidad].marca, ',');
         getline(ss, vehiculos[cantidad].placa, ',');
         getline(ss, vehiculos[cantidad].color, ',');
-        ss >> vehiculos[cantidad].year; ss.ignore(1);
-        ss >> vehiculos[cantidad].kilometraje; ss.ignore(1);
-        ss >> vehiculos[cantidad].rentado; ss.ignore(1);
+        ss >> vehiculos[cantidad].year;
+        ss.ignore();
+        ss >> vehiculos[cantidad].kilometraje;
+        ss.ignore();
+        string rentado;
+        getline(ss, rentado, ',');
+        vehiculos[cantidad].rentado = (rentado == "si");
         getline(ss, vehiculos[cantidad].motor, ',');
-        ss >> vehiculos[cantidad].precio_renta; ss.ignore(1);
+        ss >> vehiculos[cantidad].precio_renta;
+        ss.ignore();
         getline(ss, vehiculos[cantidad].cedula_cliente, ',');
         getline(ss, vehiculos[cantidad].fecha_entrega, ',');
         cantidad++;
+       
     }
     archivo.close();
 }
@@ -65,15 +71,15 @@ void leerClientes(Cliente clientes[], int &cantidad) {
     ifstream archivo("Clientes.csv");
     string linea; 
     cantidad = 0;
-    while (getline(archivo, linea) && cantidad < 100) { 
+    while (getline(archivo, linea) && cantidad < 2) { 
         stringstream ss(linea); 
         getline(ss, clientes[cantidad].cedula, ',');
         getline(ss, clientes[cantidad].nombre, ',');
         getline(ss, clientes[cantidad].apellido, ','); 
         getline(ss, clientes[cantidad].email, ','); 
         ss >> clientes[cantidad].cantidad_vehiculos_rentados; ss.ignore(1); 
-        getline(ss, clientes[cantidad].direccion, ','); 
-        ss >> clientes[cantidad].activo;
+        getline(ss, clientes[cantidad].direccion, ',');
+        ss>> clientes[cantidad].activo;
         cantidad++;
  } 
 archivo.close(); 
@@ -82,7 +88,7 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     ifstream archivo("Repuestos.csv");
     string linea;
     cantidad= 0;
-    while (getline(archivo, linea) && cantidad < 1000)
+    while (getline(archivo, linea) && cantidad < 2)
     {
         stringstream ss(linea);
         getline(ss, repuestos[cantidad].modelo_repuesto, ',');
@@ -90,8 +96,8 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
         getline(ss, repuestos[cantidad].nombre_repuesto, ','); 
         getline(ss, repuestos[cantidad].modelo_carro, ','); 
         ss >> repuestos[cantidad].year_auto; ss.ignore(1);
-         ss >> repuestos[cantidad].precio; ss.ignore(1); 
-         ss >> repuestos[cantidad].existencias; cantidad++;
+        ss >> repuestos[cantidad].precio; ss.ignore(1);
+        ss >> repuestos[cantidad].existencias; cantidad++;
     }
     archivo.close();
 
@@ -110,7 +116,7 @@ int main (){
     
     do
     {
-        cout << "¿que archivo desea ver?\n";
+        cout << "que archivo desea ver?\n";
         cout << "1. vehiculos\n";
         cout << "2. Clientes\n"; 
         cout << "3. Repuestos\n";
@@ -123,7 +129,7 @@ int main (){
         case 1:
             leervehiculos(vehiculos, cantidadVehiculos);
             cout<<"datos de vehiculo: \n";
-            for (int i = 0; i < cantidadVehiculos; i++) { 
+            for (int i = 0; i < cantidadVehiculos; i++) {
                  cout << vehiculos[i].modelo << ", " 
                     << vehiculos[i].marca << ", " 
                     << vehiculos[i].placa << ", " 
@@ -148,7 +154,7 @@ int main (){
                     << clientes[i].email << ", " 
                     << clientes[i].cantidad_vehiculos_rentados<< ", " 
                     << clientes[i].direccion << ", "
-                    << clientes[i].activo << ", " <<endl;
+                    << clientes[i].activo << "," <<endl;
             }
             break;
 
@@ -178,8 +184,4 @@ int main (){
     } while (continuar=='s' || continuar== 'S');
     
     return 0;
-}    
-    
-    
-
-    
+}     
