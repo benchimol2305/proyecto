@@ -102,8 +102,10 @@ void leerRepuestos(repuesto repuestos[], int &cantidad){
     vehiculo vehiculos[1000];
     Cliente clientes[10000];
     repuesto repuestos[1000];
-    int cantidadVehiculos;
-    int cantidadClientes;
-    int cantidadRepuestos;
+    int cantidadVehiculos=0;
+    int cantidadClientes=0;
+    int cantidadRepuestos=0;
+    int opcion;
+    char continuar;
 
     
