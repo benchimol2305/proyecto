@@ -333,7 +333,7 @@ int main() {
         cout << "7. Insertar Vehículo\n"; 
         cout << "8. Insertar Repuesto\n"; 
         cout << "9. Buscar Vehículo\n";
-
+        cout << "10. Buscar Cliente\n";
            
         cout << "12. Salir\n";
         cout << "Ingrese su opción: "; 
