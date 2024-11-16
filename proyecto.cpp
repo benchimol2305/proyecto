@@ -126,6 +126,11 @@ bool encontrado = false;
         }
     }
 
+  if (!encontrado) {
+        cout << "Vehículo no encontrado.\n";
+    }
+}
+
 
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
