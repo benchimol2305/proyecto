@@ -26,3 +26,4 @@ Sigue estos pasos para contribuir
 Contacto
  - Luis Chirinos - Email - luisemilio2006@gmail.com
  - Eldi Rangel - Email - eldi456.rangel@gmail.com
+ - Cesar Benchimol - Cesarbenchimoldavila@gmail.com
