@@ -367,6 +367,24 @@ void guardarRepuestosTemp(const repuesto repuestos[], int cantidad) {
     }
 }
 
+void confirmarCambios() {
+    char confirmar;
+    cout << "Desea confirmar los cambios realizados? (s/n): ";
+    cin >> confirmar;
+    
+    if (confirmar == 's' || confirmar == 'S') {
+        rename("Vehiculos_temp.csv", "Vehiculos.csv");
+        rename("Clientes_temp.csv", "Clientes.csv");
+        rename("Repuestos_temp.csv", "Repuestos.csv");
+        cout << "Cambios confirmados y aplicados." << endl;
+    } else {
+        remove("Vehiculos_temp.csv");
+        remove("Clientes_temp.csv");
+        remove("Repuestos_temp.csv");
+        cout << "Cambios descartados." << endl;
+    }
+}
+
 int main() {
     vehiculo vehiculos[1000];
     Cliente clientes[1000];
