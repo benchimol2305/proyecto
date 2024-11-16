@@ -156,6 +156,10 @@ if (!encontrado) {
     }
 }
 
+void buscarRepuesto(const repuesto repuestos[], int cantidad) {
+    string marcaBuscada;
+    cout << "Ingrese la marca del repuesto que desea buscar: ";
+    cin >> marcaBuscada;
 
 
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
