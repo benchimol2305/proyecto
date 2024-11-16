@@ -5,9 +5,9 @@ Este proyecto es una aplicación en C++ para gestionar información sobre vehíc
 Empecemos con la instalacion
 Partiendo de ya tener Visual Studio Code instalado, con un compilador como MinGW.
 Desde la terminal de Visual Studio Code
-Clona el repositorio usando:
+1. Clona el repositorio usando:
    git clone https://github.com/benchimol2305/proyecto
-Una vez clonado el repositorio, para ejecutar la aplicacion, usa el siguiente comando desde la terminal:
+2. Una vez clonado el repositorio, para ejecutar la aplicacion, usa el siguiente comando desde la terminal:
   ./proyecto.cpp
 El programa te presentará un menú interactivo donde podrás:
 Ver los datos de vehículos, clientes y repuestos. 
@@ -25,3 +25,4 @@ Sigue estos pasos para contribuir
 
 Contacto
 Luis Chirinos - Email - luisemilio2006@gmail.com
+Eldi Rangel - Email - eldi456.rangel@gmail.com
