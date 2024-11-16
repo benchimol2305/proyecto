@@ -9,7 +9,7 @@ Desde la terminal de Visual Studio Code
    git clone https://github.com/benchimol2305/proyecto
 2. Una vez clonado el repositorio, para ejecutar la aplicacion, usa el siguiente comando desde la terminal:
   ./proyecto.cpp
-El programa te presentará un menú interactivo donde podrás:
+3. El programa te presentará un menú interactivo donde podrás:
  - Ver los datos de vehículos, clientes y repuestos. 
  - Insertar nuevos datos.
  - Actualizar datos existentes.
