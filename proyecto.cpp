@@ -102,6 +102,11 @@ void leerRepuestos(repuesto repuestos[], int &cantidad) {
     archivo.close();
 }
 
+void buscarVehiculo(const vehiculo vehiculos[], int cantidad) {
+    string modeloBuscado;
+    cout << "Ingrese el modelo del vehículo que desea buscar: ";
+    cin >> modeloBuscado;
+
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
     if (archivo.is_open()) {
