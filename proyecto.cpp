@@ -136,6 +136,24 @@ void buscarCliente(const Cliente clientes[], int cantidad) {
     cout << "Ingrese la cédula del cliente que desea buscar: ";
     cin >> cedulaBuscada;
 
+ bool encontrado = false;
+    for (int i = 0; i < cantidad; i++) {
+        if (clientes[i].cedula == cedulaBuscada) {
+            cout << "Cliente encontrado:\n"
+                 << "Cédula: " << clientes[i].cedula << "\n"
+                 << "Nombre: " << clientes[i].nombre << "\n"
+                 << "Apellido: " << clientes[i].apellido << "\n"
+                 << "Email: " << clientes[i].email << "\n"
+                 << "Cantidad de vehículos rentados: " << clientes[i].cantidad_vehiculos_rentados << "\n"
+                 << "Dirección: " << clientes[i].direccion << "\n"
+                 << "Activo: " << (clientes[i].activo ? "Sí" : "No") << "\n";
+            encontrado = true;
+            break;
+        }
+    } 
+
+
+
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
     if (archivo.is_open()) {
