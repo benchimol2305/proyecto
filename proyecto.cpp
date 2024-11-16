@@ -213,14 +213,15 @@ int main() {
     string cedulaABorrar;
     char continuar = 'n';
     
-    do {
-        cout << "Que archivo desea ver?\n";
+       do {
+        cout << "¿Qué archivo desea ver?\n";
         cout << "1. Vehículos\n";
         cout << "2. Clientes\n"; 
         cout << "3. Repuestos\n";
         cout << "4. Borrar Cliente\n";
-        cout << "5. Salir\n"; 
-        cout << "Ingrese su opcion: "; 
+        cout << "5. Actualizar Cliente\n";
+        cout << "6. Salir\n"; 
+        cout << "Ingrese su opción: "; 
         cin >> opcion; 
         cin.ignore(100, '\n');
         
