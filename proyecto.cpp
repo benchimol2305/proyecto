@@ -251,7 +251,10 @@ int main() {
         cout << "3. Repuestos\n";
         cout << "4. Borrar Cliente\n";
         cout << "5. Actualizar Cliente\n";
-        cout << "6. Salir\n"; 
+        cout << "6. Insertar Cliente\n";
+        cout << "7. Insertar Vehículo\n"; 
+        cout << "8. Insertar Repuesto\n"; 
+        cout << "9. Salir\n";
         cout << "Ingrese su opción: "; 
         cin >> opcion; 
         cin.ignore(100, '\n');
@@ -340,7 +343,7 @@ int main() {
                 }
                 break;
 
-                        case 6: {
+            case 6: {
                 Cliente nuevoCliente;
                 cout << "Introduce la cedula del nuevo cliente: ";
                 cin >> nuevoCliente.cedula;
@@ -415,10 +418,10 @@ int main() {
                 cout << "Repuesto insertado con exito." << endl;
                 break;
             }
-
-            default:
-                cout << "Opcion no valida, por favor ingrese una opcion correcta.\n";
-                continue;
+            case 9: {
+                cout << "Saliendo del programa.\n" << endl;
+                return 0;
+            }
         }
 
         cout << "Desea continuar viendo otro archivo? (s/n): ";
