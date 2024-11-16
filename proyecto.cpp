@@ -107,6 +107,26 @@ void buscarVehiculo(const vehiculo vehiculos[], int cantidad) {
     cout << "Ingrese el modelo del vehículo que desea buscar: ";
     cin >> modeloBuscado;
 
+bool encontrado = false;
+    cout << "Vehículos encontrados:\n";
+    for (int i = 0; i < cantidad; i++) {
+        if (vehiculos[i].modelo == modeloBuscado) {
+            cout << "Modelo: " << vehiculos[i].modelo << "\n"
+                 << "Marca: " << vehiculos[i].marca << "\n"
+                 << "Placa: " << vehiculos[i].placa << "\n"
+                 << "Color: " << vehiculos[i].color << "\n"
+                 << "Año: " << vehiculos[i].year << "\n"
+                 << "Kilometraje: " << vehiculos[i].kilometraje << "\n"
+                 << "Rentado: " << (vehiculos[i].rentado ? "Sí" : "No") << "\n"
+                 << "Motor: " << vehiculos[i].motor << "\n"
+                 << "Precio de renta: " << vehiculos[i].precio_renta << "\n"
+                 << "Cédula del cliente: " << vehiculos[i].cedula_cliente << "\n"
+                 << "Fecha de entrega: " << vehiculos[i].fecha_entrega << "\n\n";
+            encontrado = true;
+        }
+    }
+
+
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
     if (archivo.is_open()) {
