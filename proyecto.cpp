@@ -332,6 +332,7 @@ int main() {
         cout << "6. Insertar Cliente\n";
         cout << "7. Insertar Vehículo\n"; 
         cout << "8. Insertar Repuesto\n"; 
+        cout << "desea buscar algo en especifico?\n"
         cout << "9. Buscar Vehículo\n";
         cout << "10. Buscar Cliente\n";
         cout << "11. Buscar Repuesto\n";
