@@ -1,0 +1,1001 @@
+modelo,marca,nombre,modelo_carro,cantidad,year,precio,existencias
+frenos,Bridgestone,bujía,Hombre Space,7,1998,222.82,si
+llantas,Bosch,bujía,Century,1,1986,109.19,si
+frenos,Mobil,filtro de aceite,Ram 3500,3,2010,264.63,si
+motor,Mobil,correa de distribución,Camaro,1,1996,112.17,no
+llantas,Michelin,filtro de aire,A8,6,2005,150.58,no
+luces,Michelin,correa de distribución,Grand Marquis,8,2003,335.26,si
+motor,Michelin,correa de distribución,Allante,10,1993,466.77,si
+frenos,Michelin,correa de distribución,Tracker,3,1992,60.47,no
+transmisión,Castrol,correa de distribución,Grand Vitara,19,2009,460.07,si
+frenos,Michelin,bujía,Quest,12,2006,399.54,no
+frenos,Michelin,filtro de aire,H2,10,2007,468.58,no
+motor,Michelin,filtro de aceite,MDX,4,2003,405.46,si
+transmisión,Castrol,filtro de aire,F-Series,6,1986,136.77,no
+motor,Bosch,pastillas de freno,Grand Am,8,1991,48.57,no
+transmisión,Michelin,correa de distribución,626,3,1993,79.9,si
+luces,Castrol,filtro de aire,GTI,10,2007,47.16,si
+motor,Bridgestone,correa de distribución,Expo,16,1994,65.11,no
+motor,Michelin,bujía,Corvette,15,1978,197.55,no
+transmisión,Bosch,filtro de aire,Trans Sport,5,1992,267.13,no
+luces,Bridgestone,filtro de aceite,FJ Cruiser,17,2010,328.63,no
+transmisión,Mobil,pastillas de freno,S40,13,2009,120.03,no
+luces,Bosch,pastillas de freno,D350,17,1992,475.93,si
+motor,Bridgestone,filtro de aire,Lumina,7,1999,192.16,no
+luces,Mobil,pastillas de freno,G,10,2001,385.03,si
+motor,Mobil,bujía,Sonoma,6,2000,427.31,si
+motor,Mobil,correa de distribución,Familia,1,1991,30.51,no
+transmisión,Bridgestone,pastillas de freno,Grand Am,20,1995,390.87,si
+transmisión,Bosch,filtro de aire,XK,19,2009,307.39,no
+frenos,Michelin,bujía,Veracruz,13,2008,432.96,no
+luces,Bridgestone,filtro de aceite,S6,8,2008,172.82,si
+motor,Bridgestone,correa de distribución,6 Series,12,2010,58.08,si
+motor,Michelin,filtro de aceite,X3,11,2011,184.58,no
+luces,Michelin,filtro de aire,GTO,4,1993,469.21,si
+motor,Bosch,filtro de aceite,Sidekick,3,1990,360.66,no
+motor,Mobil,filtro de aceite,Park Avenue,14,1992,248.18,si
+llantas,Bridgestone,filtro de aceite,Sierra Denali,12,2006,294.68,si
+luces,Bosch,pastillas de freno,S-Class,8,2006,375.27,si
+motor,Bosch,pastillas de freno,1500,10,1997,282.48,no
+motor,Michelin,bujía,Corvette,15,2006,225.78,no
+llantas,Michelin,filtro de aire,Dakota Club,13,1992,103.2,si
+motor,Bosch,correa de distribución,Explorer,8,2002,358.99,no
+transmisión,Bosch,correa de distribución,Grand Prix,9,1973,129.48,no
+frenos,Bridgestone,pastillas de freno,Ram 2500,3,2007,441.73,si
+luces,Bridgestone,pastillas de freno,940,1,1993,197.37,si
+transmisión,Bridgestone,filtro de aire,Cooper Clubman,3,2008,300.59,no
+luces,Michelin,filtro de aire,Esprit,20,1987,156.94,si
+motor,Castrol,pastillas de freno,Traverse,10,2009,303.17,si
+transmisión,Bosch,correa de distribución,4000CS Quattro,18,1987,241.54,no
+llantas,Bosch,bujía,Integra,14,1998,71.45,si
+luces,Bridgestone,correa de distribución,Dakota,17,2006,183.19,no
+frenos,Bridgestone,correa de distribución,Alliance,4,1983,22.86,no
+llantas,Bridgestone,filtro de aceite,LTD Crown Victoria,3,1993,473.19,si
+motor,Castrol,pastillas de freno,4Runner,14,1998,406.4,si
+motor,Bosch,bujía,Toronado,15,1966,480.77,no
+motor,Bridgestone,filtro de aire,CLS-Class,20,2006,327.38,no
+motor,Michelin,correa de distribución,S-Class,8,1997,90.06,si
+motor,Bosch,filtro de aceite,F150,3,2007,310.19,si
+motor,Mobil,filtro de aceite,Sebring,20,2000,226.1,si
+motor,Michelin,filtro de aceite,Fiero,5,1984,17.68,si
+frenos,Mobil,pastillas de freno,Envoy XL,6,2005,216.63,no
+motor,Castrol,filtro de aceite,C70,12,1998,490.18,no
+llantas,Bosch,filtro de aceite,Grand Caravan,16,1993,340.39,si
+frenos,Bridgestone,filtro de aceite,W201,2,1993,409.29,si
+luces,Michelin,filtro de aceite,Explorer,9,2008,301.91,no
+llantas,Bosch,pastillas de freno,Marquis,18,1986,237.31,si
+motor,Michelin,filtro de aceite,Eclipse,20,1990,205.94,si
+transmisión,Mobil,filtro de aire,Murano,11,2012,394.6,si
+motor,Mobil,filtro de aceite,Sportage,1,2002,139.37,no
+transmisión,Castrol,bujía,XL7,2,2009,351.66,no
+motor,Michelin,filtro de aceite,Equinox,3,2006,105.71,si
+transmisión,Castrol,bujía,Z4,12,2011,112.0,no
+luces,Castrol,correa de distribución,Accord,17,2007,135.51,si
+llantas,Bosch,correa de distribución,M3,6,2002,232.46,no
+llantas,Castrol,bujía,MKZ,10,2011,281.94,no
+luces,Mobil,correa de distribución,9-2X,13,2006,320.17,si
+frenos,Bridgestone,filtro de aire,Montero Sport,9,1997,486.37,si
+frenos,Bridgestone,filtro de aire,Gran Sport,18,2006,452.09,no
+llantas,Bridgestone,pastillas de freno,CX-7,18,2009,489.58,no
+luces,Castrol,filtro de aceite,Solara,2,2007,345.24,si
+frenos,Castrol,filtro de aire,STS,7,2011,305.84,si
+luces,Bosch,pastillas de freno,B-Series,8,1998,38.17,no
+motor,Michelin,pastillas de freno,Kizashi,1,2010,177.61,si
+transmisión,Bridgestone,correa de distribución,Mark VIII,16,1996,31.36,si
+transmisión,Castrol,filtro de aire,Mark VIII,16,1995,111.08,no
+frenos,Bridgestone,bujía,Tahoe,20,2000,62.8,no
+transmisión,Michelin,filtro de aceite,Rodeo,6,2004,449.54,si
+frenos,Castrol,filtro de aceite,M Roadster,20,2006,475.71,no
+luces,Michelin,pastillas de freno,300M,3,2004,118.72,si
+motor,Castrol,correa de distribución,TrailBlazer,3,2003,412.12,si
+motor,Bosch,correa de distribución,Cayman,15,2010,311.8,no
+luces,Bosch,pastillas de freno,Cube,18,2009,103.51,si
+llantas,Castrol,bujía,Avenger,14,1995,287.55,no
+transmisión,Michelin,filtro de aire,Brat,20,1985,283.74,si
+llantas,Bosch,filtro de aceite,Legacy,19,2012,296.63,si
+frenos,Michelin,filtro de aceite,Envoy,3,2004,27.91,no
+llantas,Michelin,correa de distribución,Quest,20,2011,246.15,no
+motor,Castrol,filtro de aire,Savana,5,2009,493.83,si
+transmisión,Bosch,filtro de aire,Sonoma,2,1996,471.72,no
+luces,Castrol,pastillas de freno,370Z,7,2011,347.2,no
+motor,Michelin,pastillas de freno,Crown Victoria,11,2003,387.05,no
+frenos,Bosch,bujía,Legacy,14,1997,17.95,si
+transmisión,Castrol,filtro de aceite,Typ-1,1,2008,402.95,no
+frenos,Bridgestone,filtro de aceite,Precis,17,1986,208.17,si
+transmisión,Bosch,filtro de aire,Ridgeline,14,2006,348.81,no
+luces,Bridgestone,correa de distribución,G,8,1992,113.63,si
+luces,Bosch,filtro de aire,CX-7,7,2007,390.11,no
+llantas,Castrol,correa de distribución,G-Series 1500,2,1997,172.48,no
+luces,Bridgestone,pastillas de freno,Cayman,6,2009,300.62,no
+transmisión,Mobil,filtro de aceite,960,5,1997,20.65,no
+frenos,Bridgestone,pastillas de freno,Riviera,12,1986,126.09,no
+frenos,Bosch,bujía,Cougar,3,1995,248.96,si
+luces,Michelin,bujía,Celica,14,1982,475.6,si
+transmisión,Mobil,pastillas de freno,Avalon,16,1996,223.47,no
+motor,Castrol,bujía,Sonata,9,2003,236.14,no
+luces,Mobil,correa de distribución,626,6,2000,282.27,si
+motor,Bosch,filtro de aceite,1500,17,1996,86.95,si
+frenos,Michelin,bujía,Canyon,13,2007,283.9,si
+luces,Bridgestone,pastillas de freno,Corrado,17,1990,141.42,no
+frenos,Castrol,pastillas de freno,T100,16,1995,266.08,no
+luces,Bridgestone,pastillas de freno,Impala,8,2000,172.09,no
+motor,Michelin,filtro de aceite,Passat,4,2007,56.86,si
+luces,Mobil,filtro de aceite,Firebird,16,1969,168.81,si
+llantas,Mobil,filtro de aire,Ram Wagon B250,18,1994,266.48,no
+llantas,Mobil,bujía,Ram 2500,1,1994,341.52,si
+luces,Mobil,bujía,323,9,1992,279.48,no
+luces,Bosch,pastillas de freno,911,20,2007,188.21,si
+frenos,Bridgestone,correa de distribución,Neon,20,1995,270.12,si
+luces,Bosch,bujía,Alero,16,2001,463.83,si
+frenos,Michelin,filtro de aire,E-350 Super Duty Van,14,2006,449.34,si
+llantas,Bridgestone,filtro de aceite,F-Series,1,1989,137.69,no
+llantas,Bridgestone,filtro de aceite,LHS,9,1996,188.93,no
+motor,Bridgestone,correa de distribución,Envoy XL,1,2006,212.44,no
+llantas,Michelin,pastillas de freno,Z3,10,1998,196.69,si
+llantas,Michelin,pastillas de freno,Rodeo,20,1992,271.33,no
+motor,Mobil,correa de distribución,Cayman,2,2007,48.35,si
+llantas,Michelin,pastillas de freno,911,10,1985,493.96,si
+frenos,Castrol,bujía,Sable,18,2001,237.38,si
+llantas,Bosch,correa de distribución,CL,1,1999,442.61,no
+motor,Michelin,filtro de aceite,Lumina,8,1996,272.65,no
+luces,Castrol,bujía,B-Series Plus,7,2000,139.31,si
+motor,Bridgestone,filtro de aceite,Tahoe,6,2006,108.35,no
+llantas,Bridgestone,correa de distribución,Mustang,1,1995,231.46,si
+transmisión,Michelin,filtro de aceite,IS-F,2,2010,413.25,no
+llantas,Michelin,bujía,Touareg,4,2010,52.85,si
+llantas,Castrol,pastillas de freno,Golf,20,1986,229.76,no
+luces,Bosch,correa de distribución,Lancer,5,2009,49.6,si
+luces,Mobil,filtro de aceite,Exige,11,2006,383.82,no
+motor,Mobil,bujía,Sebring,16,1996,342.8,si
+transmisión,Mobil,filtro de aire,Sparrow,17,2004,109.56,si
+motor,Castrol,pastillas de freno,QX,4,2005,308.42,no
+transmisión,Bosch,correa de distribución,G,1,2006,33.63,no
+transmisión,Castrol,filtro de aire,Allroad,14,2002,88.75,si
+motor,Mobil,pastillas de freno,A6,15,2009,473.53,si
+motor,Michelin,pastillas de freno,Corvette,17,1989,192.18,si
+llantas,Mobil,bujía,Leganza,5,1999,409.2,no
+llantas,Bridgestone,correa de distribución,Mulsanne,17,2012,283.98,si
+frenos,Castrol,filtro de aceite,Forenza,10,2008,271.3,no
+luces,Castrol,bujía,Avalanche 2500,6,2006,232.88,si
+frenos,Bosch,filtro de aceite,Alcyone SVX,15,1994,106.22,si
+luces,Bridgestone,pastillas de freno,TundraMax,6,2009,167.55,no
+motor,Bridgestone,filtro de aire,7 Series,6,1997,357.34,no
+luces,Michelin,filtro de aceite,LS,19,2010,44.83,si
+motor,Mobil,pastillas de freno,Neon,5,1995,130.03,si
+llantas,Michelin,bujía,Camaro,8,1992,327.8,no
+llantas,Michelin,correa de distribución,LeMans,7,1966,195.29,si
+luces,Mobil,pastillas de freno,Cabriolet,13,1997,305.8,no
+luces,Castrol,filtro de aceite,Enclave,15,2012,212.32,si
+luces,Michelin,filtro de aire,XC90,4,2004,157.6,no
+transmisión,Michelin,filtro de aire,Probe,1,1993,281.39,si
+luces,Michelin,filtro de aire,940,6,1994,123.28,no
+llantas,Michelin,filtro de aire,Murano,15,2006,395.62,no
+llantas,Mobil,filtro de aire,Equinox,19,2010,209.67,no
+transmisión,Castrol,correa de distribución,QX,19,2003,33.68,no
+llantas,Bosch,filtro de aceite,Genesis,12,2012,67.12,si
+frenos,Michelin,correa de distribución,Caliber,20,2009,250.42,si
+luces,Mobil,filtro de aceite,Crown Victoria,13,1999,438.03,si
+llantas,Bosch,pastillas de freno,Integra,14,1992,256.71,no
+transmisión,Castrol,filtro de aire,Ram 3500,19,2004,260.48,no
+luces,Michelin,bujía,Discovery,15,2007,379.04,si
+luces,Mobil,filtro de aceite,Suburban 2500,6,1994,183.0,no
+luces,Michelin,bujía,Outlander,8,2003,233.5,no
+frenos,Bosch,bujía,Transit Connect,10,2013,78.22,no
+luces,Bosch,pastillas de freno,Range Rover,14,1995,429.15,si
+llantas,Mobil,filtro de aire,Solara,7,2000,342.68,no
+motor,Bridgestone,pastillas de freno,Silhouette,6,2001,339.78,si
+llantas,Bridgestone,pastillas de freno,62,13,2008,412.35,no
+motor,Michelin,filtro de aire,3500,15,1994,462.61,no
+transmisión,Mobil,pastillas de freno,S70,9,1999,42.89,si
+transmisión,Bridgestone,bujía,Accord,18,1999,199.33,si
+frenos,Bridgestone,filtro de aceite,Viper RT/10,8,1994,421.4,no
+luces,Castrol,bujía,9-2X,1,2005,55.59,si
+frenos,Castrol,bujía,LTD Crown Victoria,2,1989,119.21,no
+frenos,Michelin,filtro de aire,Silverado 2500,17,2010,348.73,si
+transmisión,Bridgestone,correa de distribución,E-Class,16,1996,300.61,si
+transmisión,Bridgestone,bujía,Titan,7,2008,356.65,no
+transmisión,Mobil,filtro de aire,F450,17,2011,367.1,si
+luces,Mobil,filtro de aceite,Gallardo,7,2005,374.68,si
+transmisión,Bosch,correa de distribución,Frontier,5,2003,211.17,si
+transmisión,Bridgestone,pastillas de freno,Corvette,20,2009,481.16,si
+llantas,Michelin,pastillas de freno,F250,3,2002,185.69,no
+transmisión,Mobil,pastillas de freno,Sunfire,1,1995,195.99,si
+transmisión,Mobil,filtro de aceite,F-Series,14,1990,43.79,si
+transmisión,Castrol,pastillas de freno,CX-7,7,2012,62.77,no
+motor,Castrol,bujía,Rogue,13,2010,205.68,no
+llantas,Bridgestone,correa de distribución,Grand Marquis,20,1996,53.84,no
+motor,Castrol,pastillas de freno,Metro,19,1992,256.03,si
+motor,Bosch,pastillas de freno,Pathfinder,13,1997,447.46,no
+luces,Bridgestone,filtro de aire,Regal,20,2001,226.69,no
+luces,Castrol,pastillas de freno,S80,13,2010,414.57,no
+transmisión,Castrol,filtro de aceite,Montero Sport,5,2001,413.8,si
+frenos,Michelin,pastillas de freno,XK Series,17,1999,474.34,no
+frenos,Mobil,correa de distribución,Murciélago,4,2010,59.65,si
+transmisión,Bosch,bujía,EX,12,2010,380.84,no
+motor,Mobil,filtro de aceite,JUKE,11,2012,58.61,no
+transmisión,Michelin,filtro de aire,Traverse,17,2012,180.28,no
+transmisión,Michelin,filtro de aire,TrailBlazer,19,2006,419.89,no
+llantas,Castrol,filtro de aceite,Traverse,11,2010,499.97,no
+luces,Bosch,pastillas de freno,Town Car,19,1994,412.2,no
+motor,Mobil,filtro de aire,Navigator,13,2000,441.32,si
+llantas,Michelin,correa de distribución,Yukon XL 1500,9,2000,58.14,si
+motor,Bosch,bujía,944,4,1988,194.86,no
+llantas,Mobil,bujía,Caprice,11,1995,187.97,no
+luces,Michelin,filtro de aceite,3500,20,1992,367.45,si
+llantas,Mobil,bujía,X6,2,2010,385.25,si
+motor,Castrol,filtro de aceite,Ram Wagon B350,13,1992,199.23,no
+frenos,Bridgestone,pastillas de freno,Fox,15,1988,293.78,no
+transmisión,Mobil,pastillas de freno,Equinox,15,2008,312.95,si
+llantas,Michelin,bujía,VS Commodore,4,1996,149.39,si
+frenos,Castrol,pastillas de freno,S10,15,1993,385.63,si
+llantas,Bridgestone,filtro de aceite,Grand Prix,10,1993,408.08,si
+transmisión,Castrol,filtro de aire,Express 3500,20,2010,323.21,si
+luces,Bosch,correa de distribución,S6,3,2010,137.64,si
+luces,Michelin,pastillas de freno,Pathfinder,14,2007,101.3,no
+luces,Michelin,filtro de aceite,Pathfinder,9,2007,110.4,no
+luces,Bosch,filtro de aire,G-Series G20,15,1995,71.37,no
+transmisión,Bosch,filtro de aire,Expedition,3,2008,23.85,si
+luces,Castrol,pastillas de freno,Equus,18,2012,174.18,no
+luces,Bosch,bujía,E-Class,20,2005,277.08,no
+frenos,Bosch,correa de distribución,Brat,5,1986,113.73,si
+frenos,Bosch,filtro de aire,C70,13,2013,365.52,no
+motor,Michelin,bujía,Bronco,19,1992,304.49,si
+llantas,Castrol,bujía,PT Cruiser,1,2003,235.97,si
+llantas,Bridgestone,bujía,RX-8,13,2008,70.8,si
+luces,Bosch,correa de distribución,GTO,2,1969,163.46,si
+motor,Bridgestone,filtro de aire,Journey,8,2009,426.2,no
+llantas,Castrol,filtro de aire,Tacoma,2,2004,105.98,no
+transmisión,Michelin,pastillas de freno,S-Class,15,1991,105.37,no
+transmisión,Mobil,filtro de aceite,Escalade EXT,13,2009,476.54,no
+motor,Castrol,pastillas de freno,MX-6,14,1997,407.14,si
+frenos,Bosch,filtro de aire,Probe,19,1996,292.32,si
+frenos,Mobil,bujía,Escalade,4,2000,214.05,si
+llantas,Castrol,correa de distribución,Sprinter,4,2009,55.06,si
+llantas,Michelin,filtro de aire,Windstar,19,2003,293.02,no
+luces,Castrol,filtro de aire,Previa,20,1997,336.53,si
+luces,Castrol,bujía,RDX,9,2008,323.9,si
+llantas,Bosch,correa de distribución,S-Series,6,1996,111.24,si
+llantas,Mobil,correa de distribución,Commander,5,2007,439.09,no
+llantas,Bosch,filtro de aire,E250,17,2012,18.75,si
+luces,Castrol,filtro de aire,Malibu,2,2002,349.35,no
+transmisión,Michelin,filtro de aire,Montero Sport,13,2004,161.66,no
+motor,Castrol,correa de distribución,Mustang,15,1989,319.88,si
+transmisión,Bosch,filtro de aire,8 Series,14,1997,255.65,no
+motor,Castrol,filtro de aceite,Forte,10,2011,79.05,no
+frenos,Bridgestone,filtro de aire,Viper,11,2001,434.43,si
+motor,Castrol,pastillas de freno,Wrangler,9,2002,49.15,no
+frenos,Bosch,pastillas de freno,Express 3500,9,1999,55.76,si
+frenos,Mobil,bujía,Mountaineer,16,2008,146.0,no
+llantas,Castrol,filtro de aceite,E-Series,12,1986,137.83,si
+transmisión,Mobil,correa de distribución,Challenger,5,2010,173.57,si
+llantas,Bridgestone,filtro de aire,Touareg 2,9,2009,362.42,no
+transmisión,Bridgestone,pastillas de freno,Montana,14,2001,495.37,no
+motor,Castrol,filtro de aceite,850,3,1995,106.5,no
+motor,Bosch,bujía,F450,4,2012,20.84,si
+transmisión,Bosch,filtro de aceite,Landaulet,5,2011,327.81,si
+frenos,Bridgestone,correa de distribución,XC70,7,2003,336.4,si
+motor,Mobil,correa de distribución,Explorer Sport Trac,9,2009,315.46,no
+transmisión,Bosch,filtro de aceite,Hearse,12,1996,107.27,no
+transmisión,Mobil,pastillas de freno,228,11,1989,282.1,si
+frenos,Castrol,bujía,Sonic,18,2012,488.66,no
+motor,Bridgestone,bujía,4Runner,11,2005,332.49,no
+frenos,Bridgestone,filtro de aire,Pajero,11,1992,414.56,no
+llantas,Michelin,pastillas de freno,Scoupe,2,1995,330.67,si
+frenos,Bridgestone,bujía,Prizm,9,1995,386.48,no
+luces,Michelin,filtro de aceite,Solara,5,2003,214.94,si
+frenos,Bridgestone,filtro de aire,Corolla,15,1993,211.27,si
+llantas,Bosch,correa de distribución,Econoline E350,9,2000,443.38,si
+motor,Mobil,filtro de aire,929,9,1990,66.48,si
+luces,Castrol,bujía,Galant,5,1990,69.08,si
+transmisión,Castrol,bujía,S6,10,1995,59.3,no
+frenos,Mobil,filtro de aceite,SSR,18,2006,251.07,no
+transmisión,Bridgestone,filtro de aceite,X-Type,19,2007,114.43,no
+llantas,Castrol,filtro de aceite,Civic,12,2010,37.79,no
+motor,Bridgestone,filtro de aceite,90,17,1995,104.55,si
+llantas,Castrol,filtro de aceite,Suburban 1500,12,2008,266.65,si
+luces,Castrol,bujía,RVR,14,1994,439.26,no
+motor,Bridgestone,correa de distribución,Datsun/Nissan Z-car,10,1990,137.75,no
+frenos,Bosch,filtro de aire,Rodeo,13,1995,228.93,no
+transmisión,Bridgestone,correa de distribución,Cooper Clubman,2,2011,310.27,si
+luces,Michelin,bujía,XJ Series,11,1999,177.09,si
+luces,Mobil,bujía,Lumina,12,1996,36.7,no
+luces,Bridgestone,filtro de aire,Mazda6,19,2008,110.07,si
+frenos,Castrol,correa de distribución,Xterra,13,2000,103.12,si
+frenos,Bosch,filtro de aceite,Savana,10,2006,16.88,no
+luces,Bridgestone,filtro de aire,Park Avenue,15,1992,474.75,si
+llantas,Castrol,bujía,Ram,4,2008,311.98,no
+motor,Bridgestone,pastillas de freno,X5,12,2010,457.27,si
+motor,Bosch,correa de distribución,Cobalt,1,2010,356.96,no
+motor,Castrol,bujía,Crown Victoria,12,1994,463.88,no
+motor,Mobil,bujía,GX,16,2005,66.76,si
+llantas,Bridgestone,pastillas de freno,W126,5,1983,394.17,si
+transmisión,Bosch,pastillas de freno,Dakota,20,1997,35.39,no
+luces,Mobil,correa de distribución,E-Series,4,1996,219.0,no
+llantas,Bridgestone,pastillas de freno,Corvette,11,2005,184.72,si
+llantas,Bridgestone,bujía,Express 3500,1,2009,459.42,si
+llantas,Bosch,bujía,F-Series,19,2002,438.1,si
+frenos,Bosch,pastillas de freno,J,9,1997,301.82,si
+frenos,Bridgestone,pastillas de freno,LR2,7,2011,92.41,no
+transmisión,Michelin,filtro de aire,Familia,6,1985,144.56,no
+llantas,Bridgestone,pastillas de freno,Continental GTC,15,2007,251.26,no
+motor,Michelin,bujía,929,15,1994,48.22,no
+luces,Mobil,filtro de aceite,Silhouette,7,2002,153.12,no
+llantas,Mobil,correa de distribución,GX,18,2003,151.42,si
+transmisión,Bridgestone,correa de distribución,A4,7,2010,488.99,no
+luces,Mobil,filtro de aceite,Fleetwood,10,1954,99.4,no
+motor,Bridgestone,filtro de aire,Spider,5,1992,354.46,si
+transmisión,Bridgestone,pastillas de freno,F430,12,2007,383.99,no
+llantas,Castrol,correa de distribución,Defender 90,4,1997,355.36,no
+luces,Michelin,bujía,Yukon,7,2007,411.4,si
+motor,Mobil,correa de distribución,Topaz,1,1994,493.13,no
+frenos,Mobil,bujía,Xterra,17,2004,159.78,si
+frenos,Michelin,filtro de aceite,62,2,2010,318.59,no
+motor,Castrol,correa de distribución,Yukon XL 2500,1,2012,374.64,si
+llantas,Bosch,bujía,CL-Class,5,2002,89.38,si
+luces,Bosch,filtro de aceite,Legacy,17,2009,77.7,no
+llantas,Bosch,correa de distribución,E-Series,12,1987,427.28,si
+llantas,Bosch,correa de distribución,Hemisfear,16,2007,154.23,si
+frenos,Michelin,filtro de aceite,Maxima,19,2001,132.85,si
+transmisión,Michelin,pastillas de freno,Ranger,20,1998,461.49,no
+motor,Castrol,correa de distribución,Electra,6,1984,307.28,no
+transmisión,Mobil,filtro de aire,Econoline E350,19,1993,458.81,no
+llantas,Bosch,bujía,Esteem,3,2002,462.44,no
+luces,Bosch,filtro de aire,R32,7,2009,343.3,si
+transmisión,Bosch,bujía,Windstar,15,2001,115.04,no
+transmisión,Castrol,pastillas de freno,LeBaron,10,1992,485.21,si
+transmisión,Mobil,bujía,F450,20,2009,481.23,si
+transmisión,Bridgestone,bujía,MX-5,4,2012,232.26,si
+llantas,Castrol,pastillas de freno,G-Class,15,2012,294.49,no
+llantas,Bosch,pastillas de freno,Mazda5,20,2010,226.82,no
+llantas,Bosch,filtro de aire,DeVille,4,2005,437.68,no
+frenos,Michelin,filtro de aire,9-5,20,2010,75.11,si
+motor,Michelin,pastillas de freno,Safari,17,1999,108.83,no
+motor,Michelin,filtro de aceite,Suburban 2500,2,1998,67.55,si
+llantas,Bridgestone,filtro de aire,Savana 1500,13,2002,258.19,no
+motor,Castrol,pastillas de freno,S80,5,2006,360.42,no
+transmisión,Michelin,correa de distribución,Savana,16,2011,66.69,no
+frenos,Bosch,correa de distribución,Explorer Sport,4,2001,203.78,si
+frenos,Castrol,filtro de aceite,Highlander,7,2009,308.13,si
+transmisión,Michelin,pastillas de freno,B-Series,7,1998,65.67,si
+transmisión,Bosch,filtro de aceite,Laser,14,1989,104.58,no
+llantas,Bridgestone,correa de distribución,GTO,10,1994,55.82,no
+frenos,Bosch,bujía,W201,7,1986,74.06,si
+motor,Bridgestone,filtro de aceite,Expo,12,1995,214.76,si
+luces,Bridgestone,bujía,Silverado 1500,1,2001,386.7,no
+luces,Bosch,filtro de aceite,Matrix,19,2010,196.66,si
+luces,Castrol,filtro de aire,DB9,12,2012,306.56,si
+motor,Bridgestone,pastillas de freno,Continental,12,2007,221.74,si
+luces,Mobil,filtro de aire,GT,15,2006,82.07,si
+luces,Michelin,pastillas de freno,XK,11,2011,186.74,si
+transmisión,Bridgestone,filtro de aire,Intrepid,19,2001,351.55,si
+llantas,Bridgestone,bujía,Concorde,2,2004,239.4,no
+llantas,Bosch,correa de distribución,Silverado,3,2009,298.56,no
+frenos,Bosch,bujía,5000S,17,1986,274.13,no
+luces,Castrol,filtro de aire,A6,19,1999,410.66,si
+motor,Mobil,filtro de aire,LHS,3,1999,480.94,no
+frenos,Michelin,correa de distribución,Century,3,1986,166.69,no
+transmisión,Bosch,correa de distribución,Grand Vitara,9,2008,144.43,no
+luces,Bridgestone,pastillas de freno,Galant,2,1999,113.32,no
+motor,Castrol,filtro de aceite,Envoy,18,2008,430.61,no
+motor,Mobil,correa de distribución,Grand Marquis,8,1993,184.92,no
+transmisión,Mobil,pastillas de freno,RDX,13,2008,181.03,si
+luces,Michelin,correa de distribución,Gallardo,19,2012,334.14,no
+luces,Bosch,correa de distribución,Armada,2,2009,225.2,no
+luces,Mobil,bujía,LS,19,2001,14.8,si
+motor,Mobil,bujía,Relay,18,2006,149.42,si
+motor,Bridgestone,filtro de aceite,RX,19,2001,463.93,si
+luces,Michelin,filtro de aceite,Discovery Series II,18,2002,392.32,si
+transmisión,Mobil,correa de distribución,Santa Fe,20,2007,147.01,no
+frenos,Bosch,correa de distribución,A8,11,2002,256.12,no
+luces,Mobil,pastillas de freno,Firebird,7,2000,457.25,si
+transmisión,Michelin,bujía,Q7,18,2008,164.49,si
+llantas,Michelin,filtro de aire,E-Class,18,2009,299.73,no
+llantas,Castrol,pastillas de freno,Accord,16,1995,222.88,si
+luces,Bridgestone,filtro de aceite,Club Wagon,17,1998,449.01,si
+luces,Bridgestone,filtro de aceite,Camaro,7,2002,11.98,si
+frenos,Castrol,correa de distribución,Evora,8,2012,338.68,no
+frenos,Castrol,correa de distribución,riolet,13,1998,283.81,no
+llantas,Michelin,filtro de aire,Esteem,20,1997,106.75,si
+motor,Mobil,pastillas de freno,Escape,10,2005,276.86,no
+motor,Bosch,pastillas de freno,Expedition,16,2004,134.22,no
+motor,Bridgestone,filtro de aceite,MR2,20,1986,49.49,si
+luces,Michelin,correa de distribución,SLX,14,1998,240.61,si
+luces,Michelin,filtro de aceite,Suburban 1500,12,1996,472.25,si
+motor,Bosch,filtro de aceite,Riviera,20,1991,34.73,si
+luces,Mobil,filtro de aire,Celica,19,1998,34.21,no
+llantas,Mobil,bujía,LeBaron,12,1992,385.69,si
+frenos,Michelin,pastillas de freno,GTI,10,1987,282.62,si
+llantas,Mobil,bujía,900,18,1988,193.62,no
+transmisión,Bridgestone,correa de distribución,Mazda6,9,2012,289.57,no
+motor,Mobil,correa de distribución,C-Class,9,2007,351.51,no
+motor,Michelin,correa de distribución,Mustang,5,1971,432.01,si
+motor,Bosch,filtro de aceite,Outlander,14,2008,137.15,no
+luces,Castrol,pastillas de freno,Jetta III,8,1993,335.74,no
+frenos,Bridgestone,filtro de aceite,400SEL,2,1993,480.93,no
+luces,Mobil,bujía,M3,17,1999,192.19,si
+motor,Bosch,correa de distribución,1 Series,16,2009,27.14,no
+motor,Castrol,filtro de aire,Justy,6,1994,492.43,no
+transmisión,Bridgestone,filtro de aceite,Jetta,15,1998,303.23,no
+transmisión,Castrol,pastillas de freno,Sierra 1500,8,2012,140.8,si
+llantas,Castrol,filtro de aceite,Neon,8,1995,332.23,si
+llantas,Bridgestone,filtro de aire,Impala,20,2003,286.94,no
+luces,Castrol,pastillas de freno,Sonata,4,2007,374.33,no
+motor,Bosch,bujía,Yukon,19,1997,346.63,no
+luces,Michelin,filtro de aceite,Cabriolet,15,1986,113.24,no
+motor,Michelin,pastillas de freno,Altima,13,2009,15.98,no
+luces,Castrol,bujía,Ranger,1,2008,103.35,no
+luces,Michelin,pastillas de freno,Land Cruiser,20,2006,51.05,si
+motor,Bosch,correa de distribución,Miata MX-5,6,2010,436.39,no
+transmisión,Bosch,filtro de aceite,Integra,7,1993,485.93,no
+transmisión,Bridgestone,filtro de aceite,Express 2500,9,2001,410.76,no
+llantas,Michelin,bujía,Parisienne,20,1984,405.39,no
+motor,Bosch,filtro de aceite,Azure,12,2009,459.08,no
+transmisión,Mobil,pastillas de freno,Baja,8,2004,442.95,si
+transmisión,Bosch,pastillas de freno,Tracker,18,1999,497.31,si
+luces,Bosch,bujía,Rodeo,13,1992,153.4,si
+llantas,Bridgestone,correa de distribución,Mazda6 5-Door,3,2006,176.7,no
+frenos,Bosch,bujía,i-370,4,2007,284.04,si
+llantas,Castrol,bujía,riolet,6,1992,353.77,no
+transmisión,Bridgestone,correa de distribución,Navajo,10,1993,65.78,si
+llantas,Michelin,pastillas de freno,R-Class,19,2007,264.5,si
+frenos,Michelin,filtro de aire,Escort,13,2004,229.35,no
+llantas,Bosch,bujía,Elan,4,1994,325.42,si
+frenos,Bridgestone,filtro de aire,Summit,1,1992,242.56,no
+frenos,Michelin,bujía,Town Car,8,1986,480.64,no
+motor,Bosch,correa de distribución,Suburban 2500,3,2004,227.63,si
+luces,Castrol,filtro de aceite,Taurus,14,1993,268.39,si
+motor,Mobil,filtro de aire,760,5,2003,171.76,si
+frenos,Mobil,correa de distribución,LR4,16,2012,307.43,no
+llantas,Castrol,correa de distribución,Mustang,4,1985,126.78,no
+llantas,Michelin,filtro de aire,Ram 3500,18,2002,483.68,si
+transmisión,Mobil,bujía,3500,4,1992,113.65,si
+frenos,Bridgestone,filtro de aceite,NSX,8,1995,395.78,si
+llantas,Bridgestone,correa de distribución,Outlook,15,2007,255.33,no
+llantas,Bridgestone,filtro de aceite,Thunderbird,16,1990,198.32,no
+frenos,Mobil,bujía,tC,7,2009,30.66,no
+luces,Bridgestone,bujía,Bonneville,16,1999,25.82,no
+transmisión,Castrol,pastillas de freno,Range Rover Sport,2,2009,390.52,si
+motor,Bosch,filtro de aceite,S-Class,6,2002,303.53,si
+luces,Mobil,pastillas de freno,XJ Series,2,1995,184.97,si
+luces,Michelin,filtro de aire,MKZ,20,2008,392.24,si
+motor,Michelin,correa de distribución,Corvette,18,1969,81.4,si
+luces,Bosch,filtro de aceite,8 Series,3,1992,442.19,si
+luces,Bridgestone,bujía,Century,13,2003,423.54,si
+llantas,Castrol,filtro de aire,Swift,9,1987,492.09,si
+motor,Michelin,pastillas de freno,Corvette,6,1993,438.62,si
+llantas,Castrol,pastillas de freno,Forester,4,2001,216.46,si
+motor,Mobil,correa de distribución,Vantage,20,2007,112.65,si
+frenos,Bosch,pastillas de freno,Rabbit,20,2010,150.49,si
+frenos,Bosch,filtro de aire,MPV,20,2003,66.47,no
+llantas,Mobil,pastillas de freno,TL,13,2004,279.41,si
+transmisión,Bridgestone,filtro de aire,DBS,17,2012,435.44,no
+luces,Michelin,correa de distribución,Tracker,7,2002,75.24,si
+frenos,Mobil,bujía,M3,2,2003,149.05,no
+luces,Michelin,pastillas de freno,C30,14,2011,392.16,no
+luces,Bridgestone,pastillas de freno,200SX,11,1997,220.33,si
+llantas,Bridgestone,filtro de aire,Grand Voyager,7,1998,170.21,no
+llantas,Mobil,correa de distribución,Challenger,9,1999,275.66,si
+luces,Michelin,correa de distribución,3000GT,4,1994,303.86,si
+frenos,Michelin,correa de distribución,EXP,16,1984,13.53,no
+llantas,Mobil,pastillas de freno,Sportvan G10,2,1992,410.52,no
+transmisión,Bridgestone,filtro de aceite,3000GT,16,1992,136.21,si
+luces,Mobil,pastillas de freno,A4,7,2006,309.79,si
+transmisión,Bridgestone,bujía,GTO,8,1973,211.01,si
+motor,Mobil,bujía,Fox,17,1990,326.07,si
+llantas,Mobil,filtro de aceite,Terrain,18,2012,91.79,si
+llantas,Bosch,filtro de aceite,Esteem,11,1999,377.82,si
+motor,Bosch,correa de distribución,CR-V,13,2003,422.83,no
+luces,Bridgestone,filtro de aire,Tacoma,20,2003,47.0,no
+luces,Michelin,pastillas de freno,Galant,1,2007,312.63,no
+llantas,Michelin,correa de distribución,E150,2,2006,80.77,si
+llantas,Bosch,bujía,Taurus,10,1999,20.62,si
+transmisión,Mobil,correa de distribución,Millenia,20,1998,387.38,si
+luces,Bridgestone,correa de distribución,Cooper,8,2008,340.51,no
+luces,Castrol,filtro de aceite,ES,8,2008,216.14,no
+transmisión,Bosch,correa de distribución,Camaro,20,1992,112.91,si
+frenos,Bosch,filtro de aceite,Legacy,20,1993,424.34,no
+transmisión,Mobil,correa de distribución,Expedition,6,2008,177.44,si
+luces,Bosch,pastillas de freno,Avalon,8,2003,481.64,no
+motor,Mobil,filtro de aceite,V50,13,2009,241.16,si
+llantas,Bridgestone,pastillas de freno,Monte Carlo,17,1995,112.49,no
+luces,Bridgestone,pastillas de freno,Prius,5,2005,116.89,si
+llantas,Bridgestone,bujía,ZDX,9,2010,226.34,si
+luces,Michelin,bujía,Pajero,17,1998,101.4,si
+luces,Michelin,filtro de aceite,Explorer,6,2012,328.21,si
+llantas,Michelin,bujía,Pathfinder,5,2007,51.74,no
+llantas,Bosch,pastillas de freno,G,16,2012,458.87,si
+frenos,Castrol,pastillas de freno,Laser,16,1984,51.15,si
+transmisión,Castrol,filtro de aceite,Mustang,2,1997,383.02,si
+transmisión,Bridgestone,filtro de aire,Sentra,19,1997,128.99,si
+transmisión,Mobil,bujía,Focus,10,2005,146.1,no
+frenos,Bridgestone,filtro de aceite,Sundance,12,1994,256.14,si
+llantas,Michelin,pastillas de freno,Expedition,5,1999,222.53,si
+transmisión,Bridgestone,filtro de aire,Golf,10,1984,303.04,no
+motor,Bosch,pastillas de freno,Metro,11,1996,357.55,si
+luces,Michelin,bujía,Crown Victoria,4,2009,12.82,no
+transmisión,Michelin,correa de distribución,Ridgeline,11,2009,320.98,no
+luces,Castrol,correa de distribución,Yukon XL 2500,2,2011,64.92,no
+llantas,Mobil,pastillas de freno,Town & Country,4,1999,21.7,si
+luces,Mobil,bujía,Eurovan,2,1999,216.33,si
+frenos,Bosch,filtro de aceite,Outback,7,2006,57.18,si
+frenos,Bridgestone,bujía,Rogue,15,2010,255.12,no
+llantas,Mobil,pastillas de freno,Fifth Ave,5,1992,482.1,si
+transmisión,Michelin,filtro de aire,4000s,9,1985,325.8,no
+transmisión,Mobil,pastillas de freno,Yukon,13,2004,298.5,si
+llantas,Castrol,filtro de aceite,Caravan,11,2006,397.99,no
+llantas,Bridgestone,bujía,Malibu,16,2004,235.96,no
+transmisión,Mobil,pastillas de freno,Caravan,1,1998,467.84,no
+transmisión,Michelin,filtro de aceite,Venture,12,2004,296.92,no
+frenos,Mobil,bujía,MKZ,8,2009,425.01,no
+frenos,Mobil,bujía,Crossfire,10,2005,171.08,si
+frenos,Bridgestone,correa de distribución,TL,19,2001,160.69,no
+motor,Michelin,pastillas de freno,TundraMax,11,2007,316.96,si
+frenos,Castrol,filtro de aire,LR3,11,2007,377.67,si
+luces,Bosch,bujía,Montero,11,1998,401.15,si
+transmisión,Michelin,filtro de aceite,7 Series,19,2009,135.4,si
+frenos,Castrol,filtro de aire,GranTurismo,17,2008,449.7,no
+llantas,Mobil,bujía,RX-8,17,2007,137.08,si
+frenos,Bosch,pastillas de freno,Eldorado,6,1996,482.53,si
+motor,Michelin,filtro de aire,Z4,1,2003,416.98,no
+frenos,Bridgestone,filtro de aire,Excursion,3,2002,327.05,no
+llantas,Mobil,filtro de aire,A6,19,2001,36.22,si
+transmisión,Bosch,filtro de aceite,LR4,3,2010,361.87,si
+luces,Mobil,correa de distribución,Forester,16,2008,382.06,no
+luces,Mobil,filtro de aceite,8 Series,19,1994,75.65,no
+frenos,Michelin,correa de distribución,Sequoia,19,2009,175.36,no
+transmisión,Mobil,bujía,SL-Class,14,2003,264.84,no
+frenos,Bridgestone,filtro de aire,Ranger,4,1999,471.62,no
+luces,Michelin,filtro de aire,Colt Vista,12,1993,293.52,no
+luces,Bosch,correa de distribución,A5,8,2009,377.92,si
+transmisión,Mobil,filtro de aire,Miata MX-5,18,2009,90.99,no
+luces,Michelin,filtro de aire,Lumina,1,1996,161.25,si
+frenos,Bridgestone,filtro de aceite,Matrix,18,2004,418.55,si
+motor,Michelin,bujía,Envoy,1,2002,285.92,no
+llantas,Michelin,pastillas de freno,Econoline E250,2,2000,291.13,no
+transmisión,Bridgestone,filtro de aire,MX-5,9,2012,112.19,no
+motor,Michelin,filtro de aceite,Esprit,12,1991,485.85,si
+frenos,Castrol,correa de distribución,Grand Voyager,6,1997,150.26,no
+transmisión,Mobil,filtro de aceite,Truck,6,1987,458.96,si
+llantas,Mobil,bujía,Skylark,10,1989,104.23,no
+frenos,Michelin,filtro de aire,C70,13,2012,66.27,no
+llantas,Bridgestone,bujía,Versa,1,2012,345.2,no
+llantas,Castrol,filtro de aire,LeBaron,1,1993,238.17,si
+motor,Bosch,filtro de aceite,Camry,13,2005,403.57,si
+motor,Mobil,filtro de aceite,Fortwo,6,2012,152.93,si
+luces,Michelin,filtro de aire,Liberty,7,2011,461.27,no
+luces,Bosch,bujía,Villager,7,1995,210.31,si
+motor,Bosch,bujía,Grand Voyager,18,1998,177.64,no
+transmisión,Michelin,bujía,LS,12,1992,190.21,no
+llantas,Mobil,bujía,B2500,16,2001,375.33,si
+llantas,Mobil,filtro de aceite,Arnage,6,2009,47.34,no
+motor,Castrol,correa de distribución,Diablo,14,2001,39.98,no
+luces,Castrol,filtro de aire,Pajero,13,1999,186.29,si
+transmisión,Mobil,pastillas de freno,Yukon,4,1992,382.62,no
+motor,Bridgestone,correa de distribución,Mustang,13,1999,214.5,si
+transmisión,Mobil,pastillas de freno,Express 1500,10,2006,434.78,si
+motor,Michelin,pastillas de freno,ES,10,2010,132.94,no
+llantas,Bosch,bujía,Avanti,15,1962,257.58,si
+motor,Bosch,filtro de aceite,Scoupe,10,1993,478.5,si
+llantas,Michelin,bujía,RSX,11,2002,182.06,si
+frenos,Bosch,pastillas de freno,612 Scaglietti,2,2006,354.91,no
+llantas,Castrol,bujía,Outback,16,2007,431.09,no
+luces,Castrol,filtro de aceite,Escalade ESV,1,2008,300.29,si
+llantas,Bosch,pastillas de freno,Miata MX-5,17,2003,41.41,si
+llantas,Bridgestone,correa de distribución,Focus,5,2005,175.19,no
+frenos,Castrol,filtro de aceite,A5,8,2009,217.95,no
+transmisión,Bosch,bujía,Rainier,7,2007,470.59,no
+luces,Castrol,filtro de aceite,Town Car,4,2003,43.99,no
+luces,Mobil,pastillas de freno,Skyhawk,16,1988,66.75,si
+llantas,Michelin,correa de distribución,Mirage,8,1986,446.45,si
+transmisión,Bosch,correa de distribución,Parisienne,6,1985,499.04,no
+frenos,Castrol,filtro de aceite,R-Class,7,2012,93.27,no
+luces,Michelin,correa de distribución,Bronco II,7,1985,269.51,no
+motor,Mobil,filtro de aceite,Savana 3500,20,2008,121.48,si
+motor,Michelin,bujía,Cougar,14,1984,23.97,no
+transmisión,Mobil,filtro de aceite,G-Series G30,2,1996,287.84,si
+luces,Michelin,filtro de aceite,Skylark,15,1992,75.38,si
+motor,Michelin,filtro de aceite,Sentra,10,2006,182.58,si
+motor,Castrol,filtro de aire,Escalade ESV,8,2012,193.6,no
+transmisión,Michelin,pastillas de freno,Town Car,1,1998,404.1,no
+frenos,Castrol,filtro de aceite,Torrent,18,2008,479.68,si
+motor,Bosch,bujía,Cavalier,18,2002,445.67,si
+transmisión,Castrol,filtro de aceite,Town Car,12,2009,84.62,no
+luces,Bosch,filtro de aceite,Accent,14,2001,213.43,no
+transmisión,Michelin,filtro de aceite,Countryman,2,2011,163.11,no
+llantas,Bosch,correa de distribución,Camry,2,1994,21.3,si
+luces,Mobil,bujía,Viper,18,2003,491.87,no
+transmisión,Michelin,bujía,3500,11,1999,25.38,no
+frenos,Bridgestone,bujía,Daewoo Lacetti,6,2008,241.83,no
+frenos,Castrol,pastillas de freno,Corvette,3,2000,123.39,no
+llantas,Castrol,filtro de aceite,Silverado 1500,10,1999,329.6,si
+frenos,Bosch,filtro de aire,Continental,4,1999,322.25,si
+llantas,Bridgestone,pastillas de freno,CLK-Class,5,2009,458.38,no
+luces,Mobil,pastillas de freno,Volare,5,1976,280.95,si
+llantas,Michelin,bujía,Excursion,11,2004,254.82,no
+frenos,Castrol,correa de distribución,X6,1,2010,398.31,no
+llantas,Bridgestone,filtro de aire,S-Class,6,1991,426.79,no
+llantas,Bosch,filtro de aceite,Sorento,18,2009,99.56,si
+llantas,Mobil,filtro de aire,Tahoe,7,2011,70.73,si
+transmisión,Mobil,pastillas de freno,TT,5,2000,357.58,no
+frenos,Bosch,filtro de aire,Lancer,10,2004,313.2,no
+motor,Bosch,bujía,Sierra 3500,20,2003,46.7,no
+frenos,Michelin,filtro de aceite,1500,15,1995,425.76,si
+frenos,Mobil,pastillas de freno,944,19,1984,45.87,si
+llantas,Bridgestone,pastillas de freno,Grand Voyager,13,1998,180.1,si
+luces,Michelin,correa de distribución,M,10,2008,119.92,no
+transmisión,Castrol,filtro de aire,Savana 1500,11,2003,480.61,si
+transmisión,Bosch,pastillas de freno,Diamante,18,2002,144.53,no
+motor,Michelin,filtro de aceite,Escalade EXT,9,2004,467.44,si
+llantas,Mobil,filtro de aire,Maxima,7,1999,382.66,no
+frenos,Michelin,filtro de aceite,F150,5,2005,439.66,si
+motor,Castrol,bujía,Accord,16,2010,359.33,si
+frenos,Castrol,bujía,Maxima,1,1995,486.0,no
+llantas,Mobil,pastillas de freno,Continental Super,19,2012,196.04,si
+frenos,Bosch,bujía,Breeze,12,1997,156.51,no
+frenos,Mobil,filtro de aire,Astro,11,1993,37.06,no
+motor,Mobil,filtro de aceite,3000GT,18,1999,132.42,no
+llantas,Michelin,filtro de aire,riolet,13,1993,69.28,no
+motor,Castrol,correa de distribución,X-90,15,1998,367.55,no
+llantas,Castrol,pastillas de freno,Electra,15,1987,403.92,si
+transmisión,Mobil,correa de distribución,Mighty Max,18,1992,436.48,si
+motor,Castrol,bujía,Relay,3,2005,55.55,si
+luces,Castrol,filtro de aceite,Cougar,14,1988,34.64,si
+llantas,Castrol,correa de distribución,Aerio,8,2007,178.94,si
+motor,Michelin,pastillas de freno,Golf,1,2005,135.64,no
+motor,Mobil,filtro de aire,Sierra 3500,9,2012,214.49,si
+motor,Bridgestone,filtro de aceite,Astro,3,1996,244.26,no
+motor,Bridgestone,pastillas de freno,Veloster,4,2012,128.24,no
+frenos,Castrol,correa de distribución,New Beetle,20,2012,136.43,no
+llantas,Bosch,pastillas de freno,GS,14,2002,207.75,no
+llantas,Bosch,filtro de aire,Sprinter,18,2010,242.52,no
+transmisión,Michelin,bujía,Daytona,6,1993,276.69,si
+motor,Castrol,pastillas de freno,Corolla,3,2005,337.66,si
+motor,Castrol,bujía,W201,1,1988,479.58,no
+luces,Castrol,filtro de aceite,Savana 1500,8,2002,385.39,no
+frenos,Michelin,filtro de aire,GL-Class,19,2007,246.78,si
+luces,Mobil,filtro de aceite,Escalade EXT,1,2003,494.72,si
+luces,Castrol,pastillas de freno,458 Italia,1,2011,202.36,si
+motor,Michelin,bujía,Optima,13,2007,321.18,no
+llantas,Bosch,correa de distribución,Galant,3,2010,18.77,si
+motor,Bosch,filtro de aceite,Sportage,19,2010,409.48,no
+transmisión,Bridgestone,filtro de aceite,Mazda6 Sport,3,2006,167.34,si
+llantas,Bridgestone,bujía,Tracer,19,1996,197.97,no
+transmisión,Castrol,bujía,W126,7,1981,416.34,no
+llantas,Bridgestone,correa de distribución,LX,10,2000,328.22,no
+frenos,Mobil,correa de distribución,Avalanche 1500,16,2002,351.51,si
+transmisión,Bosch,bujía,Imperial,11,1926,319.42,no
+frenos,Bridgestone,bujía,Expedition,3,2005,27.84,si
+transmisión,Michelin,pastillas de freno,SVX,8,1997,426.07,no
+frenos,Bridgestone,pastillas de freno,Thunderbird,7,1967,267.45,no
+motor,Bridgestone,filtro de aceite,300M,5,2004,232.75,no
+luces,Mobil,bujía,Daewoo Lacetti,1,2008,299.93,si
+motor,Mobil,correa de distribución,Boxster,17,2006,401.67,si
+llantas,Castrol,correa de distribución,Pilot,15,2010,157.53,si
+llantas,Michelin,filtro de aire,MKS,16,2012,27.31,no
+luces,Bosch,filtro de aire,M6,4,2006,197.63,si
+motor,Michelin,bujía,XG350,16,2003,432.33,no
+motor,Mobil,pastillas de freno,LeSabre,19,1992,294.35,no
+llantas,Castrol,filtro de aire,Highlander,14,2011,354.75,no
+luces,Bridgestone,filtro de aceite,Escape,8,2004,403.04,no
+frenos,Bridgestone,filtro de aire,Town Car,14,2005,254.03,no
+luces,Bridgestone,bujía,G,18,1994,313.74,si
+motor,Mobil,bujía,A8,15,1999,345.26,no
+luces,Bridgestone,filtro de aire,SC,6,2003,304.49,si
+transmisión,Castrol,pastillas de freno,Expedition,14,2000,252.43,si
+transmisión,Michelin,filtro de aire,Enclave,1,2011,314.54,si
+motor,Castrol,filtro de aceite,LTD,17,1984,292.16,no
+luces,Castrol,pastillas de freno,Savana,13,2008,233.53,si
+frenos,Mobil,pastillas de freno,G-Series G20,8,1994,223.98,si
+frenos,Mobil,bujía,LS,10,2011,292.82,si
+frenos,Michelin,filtro de aceite,Voyager,9,1998,470.73,si
+transmisión,Castrol,bujía,Grand Am,9,1987,383.63,no
+transmisión,Bridgestone,filtro de aceite,Alero,18,2003,395.12,no
+luces,Bosch,pastillas de freno,Scirocco,19,1985,375.13,no
+frenos,Castrol,pastillas de freno,Liberty,8,2010,48.38,no
+luces,Bosch,filtro de aceite,1500,12,1997,49.96,si
+llantas,Michelin,bujía,57,15,2004,467.45,no
+motor,Mobil,pastillas de freno,Spectra,14,2003,205.73,si
+luces,Bridgestone,filtro de aceite,Interceptor,2,1967,236.75,si
+motor,Bosch,correa de distribución,Cherokee,19,1995,311.19,no
+motor,Mobil,filtro de aceite,Optima,9,2010,474.73,no
+motor,Bosch,bujía,SL-Class,15,1998,144.46,no
+transmisión,Castrol,bujía,Uplander,6,2008,339.67,no
+motor,Michelin,correa de distribución,4Runner,15,2005,132.09,si
+motor,Castrol,correa de distribución,Montana,8,2006,237.12,no
+llantas,Michelin,filtro de aceite,Eclipse,6,2002,497.78,si
+frenos,Bridgestone,filtro de aceite,Mountaineer,19,2000,401.94,si
+transmisión,Bosch,pastillas de freno,Yukon XL 2500,1,2001,350.65,no
+llantas,Bridgestone,filtro de aceite,Ridgeline,10,2009,497.51,no
+motor,Castrol,pastillas de freno,Blazer,1,1994,13.27,no
+llantas,Castrol,pastillas de freno,Thunderbird,6,1958,148.34,no
+frenos,Michelin,bujía,G25,11,2012,186.11,si
+llantas,Bosch,pastillas de freno,Camry Hybrid,12,2012,474.89,no
+llantas,Bosch,pastillas de freno,A8,12,2007,26.26,no
+luces,Michelin,filtro de aire,XF,20,2010,269.5,si
+motor,Bridgestone,bujía,911,15,2013,278.66,no
+frenos,Mobil,filtro de aceite,C-Class,8,2000,246.29,no
+transmisión,Castrol,pastillas de freno,Veracruz,13,2009,240.08,no
+frenos,Bridgestone,pastillas de freno,SRX,8,2011,33.05,no
+frenos,Bridgestone,correa de distribución,57,2,2011,60.8,si
+luces,Michelin,bujía,S2000,19,2003,345.47,no
+transmisión,Castrol,correa de distribución,Silverado 2500,10,1999,285.81,si
+frenos,Bosch,filtro de aire,Shadow,19,1993,424.71,no
+motor,Castrol,filtro de aceite,1500,14,1997,148.26,no
+motor,Bridgestone,bujía,612 Scaglietti,10,2008,345.05,no
+llantas,Mobil,filtro de aceite,Camaro,10,1994,471.9,no
+luces,Bosch,filtro de aceite,LS,16,1993,423.63,no
+luces,Castrol,pastillas de freno,Cayman,10,2009,363.34,si
+llantas,Bosch,correa de distribución,Blazer,11,2005,257.7,no
+llantas,Castrol,pastillas de freno,H2 SUV,17,2006,175.3,si
+frenos,Michelin,filtro de aire,Bravada,1,1993,12.96,no
+llantas,Mobil,correa de distribución,Explorer Sport Trac,7,2004,310.38,no
+luces,Bridgestone,pastillas de freno,Dakota Club,1,1993,136.99,si
+transmisión,Mobil,bujía,Silhouette,15,1995,491.74,si
+motor,Castrol,correa de distribución,Miata MX-5,16,1997,450.74,no
+llantas,Castrol,pastillas de freno,Venza,5,2012,269.25,si
+llantas,Bridgestone,bujía,Grand Cherokee,17,1999,177.36,no
+motor,Michelin,correa de distribución,Ram Van 1500,13,1997,111.83,si
+transmisión,Bridgestone,pastillas de freno,Galant,2,2010,143.23,no
+transmisión,Mobil,correa de distribución,Mirage,12,1984,465.92,no
+frenos,Bosch,bujía,LS,8,2006,53.11,si
+luces,Castrol,bujía,Jimmy,13,1997,379.83,si
+llantas,Castrol,pastillas de freno,DB9 Volante,17,2006,287.75,si
+llantas,Bosch,correa de distribución,CL-Class,16,2009,387.46,no
+transmisión,Michelin,bujía,Q,7,1992,116.72,si
+frenos,Michelin,pastillas de freno,XJ Series,4,2001,447.68,no
+motor,Castrol,correa de distribución,Bonneville,13,1988,208.19,si
+frenos,Bridgestone,correa de distribución,Jetta,18,1997,478.52,si
+luces,Michelin,filtro de aire,Dakota Club,14,2005,37.14,si
+motor,Bridgestone,filtro de aceite,Grand Cherokee,11,1998,280.64,no
+llantas,Castrol,filtro de aceite,Discovery Series II,3,2001,413.03,no
+frenos,Mobil,filtro de aceite,Savana 3500,5,2008,133.44,no
+luces,Bridgestone,filtro de aceite,ZDX,16,2010,312.97,no
+llantas,Bridgestone,bujía,940,4,1992,91.95,si
+transmisión,Mobil,pastillas de freno,911,11,1986,289.26,no
+luces,Bosch,pastillas de freno,M-Class,3,1998,300.42,no
+luces,Michelin,correa de distribución,Bronco II,10,1984,253.14,no
+llantas,Bridgestone,bujía,Suburban 1500,1,2012,293.35,si
+luces,Michelin,bujía,Cavalier,8,2002,24.69,no
+luces,Castrol,filtro de aire,DBS,15,2012,139.97,si
+luces,Castrol,filtro de aceite,Econoline E150,17,1997,332.67,no
+llantas,Castrol,filtro de aire,Park Avenue,12,2005,199.16,no
+frenos,Bridgestone,bujía,Range Rover Sport,8,2012,160.42,si
+llantas,Bosch,pastillas de freno,Silverado 2500,14,2010,134.59,no
+transmisión,Bridgestone,bujía,Rodeo,14,1992,197.13,si
+luces,Bridgestone,correa de distribución,C-Class,4,2008,78.08,si
+frenos,Michelin,filtro de aceite,Veloster,6,2013,430.6,no
+llantas,Bridgestone,pastillas de freno,Falcon,11,1967,16.51,no
+llantas,Castrol,filtro de aire,Ranger,11,2000,247.43,no
+luces,Michelin,pastillas de freno,Town Car,2,1984,59.19,no
+luces,Mobil,bujía,Viper,2,2006,404.79,no
+luces,Mobil,correa de distribución,Capri,18,1993,173.78,si
+frenos,Castrol,filtro de aceite,A3,15,2007,179.04,no
+llantas,Bosch,correa de distribución,Grand Prix,20,1971,423.95,si
+motor,Michelin,correa de distribución,Endeavor,1,2007,200.47,no
+motor,Castrol,filtro de aire,Diamante,12,1997,480.91,si
+motor,Bosch,bujía,Supra,19,1993,380.0,no
+luces,Mobil,correa de distribución,Chariot,16,1989,292.3,si
+frenos,Michelin,correa de distribución,Suburban,11,2010,267.25,si
+transmisión,Bosch,filtro de aceite,300ZX,9,1993,207.75,si
+luces,Bridgestone,correa de distribución,GX,6,2004,338.3,si
+luces,Bridgestone,bujía,Hemisfear,11,2007,18.97,si
+frenos,Bridgestone,filtro de aceite,CLK-Class,4,2002,141.34,no
+llantas,Bridgestone,bujía,DeVille,7,1997,329.7,si
+transmisión,Bridgestone,filtro de aceite,DeVille,3,2003,61.27,si
+luces,Michelin,pastillas de freno,Cressida,7,1992,210.44,si
+luces,Mobil,correa de distribución,2500,1,1996,455.19,si
+transmisión,Bosch,bujía,G-Class,3,2007,74.22,no
+transmisión,Mobil,filtro de aire,Grand Vitara,18,2004,433.33,no
+luces,Bosch,filtro de aire,500SL,7,1993,12.66,si
+transmisión,Bridgestone,pastillas de freno,Ram 3500,11,1997,320.53,si
+motor,Mobil,correa de distribución,XC70,13,2008,263.53,no
+llantas,Bosch,pastillas de freno,A8,8,2005,421.94,no
+luces,Bridgestone,filtro de aire,Liberty,6,2003,262.28,no
+llantas,Michelin,correa de distribución,S-Type,19,2006,187.97,si
+motor,Mobil,pastillas de freno,600,8,1959,485.6,no
+frenos,Mobil,filtro de aceite,F150,12,1999,259.62,no
+transmisión,Castrol,filtro de aire,Savana 1500,3,1996,334.36,si
+frenos,Mobil,filtro de aire,Accord,15,2002,56.98,si
+luces,Bosch,pastillas de freno,Armada,14,2011,202.09,no
+motor,Michelin,filtro de aceite,Eurovan,15,1999,153.19,no
+motor,Castrol,filtro de aceite,3000GT,9,1997,322.99,no
+motor,Bridgestone,correa de distribución,Fiesta,8,2011,99.53,no
+frenos,Bridgestone,filtro de aire,9-5,16,2001,165.82,si
+luces,Michelin,filtro de aceite,8 Series,18,1992,194.91,no
+motor,Mobil,pastillas de freno,Genesis Coupe,13,2011,87.01,si
+luces,Bosch,bujía,Aerostar,19,1994,319.68,no
+luces,Bosch,filtro de aceite,Avalanche 1500,11,2006,210.95,si
+frenos,Bridgestone,bujía,VUE,3,2005,141.91,si
+motor,Bosch,filtro de aceite,Mustang,3,2009,124.46,si
+llantas,Bosch,bujía,VUE,3,2006,286.66,si
+luces,Mobil,correa de distribución,Z3,19,1996,305.81,no
+luces,Bridgestone,bujía,Catera,12,1999,290.55,si
+llantas,Bridgestone,pastillas de freno,Malibu,14,1998,340.84,si
+llantas,Castrol,filtro de aire,6000,16,1986,310.02,no
+transmisión,Bosch,filtro de aceite,SLX,6,1998,33.91,no
+llantas,Mobil,filtro de aceite,Cougar,8,1988,424.1,no
+llantas,Michelin,correa de distribución,Prelude,1,1997,312.36,no
+llantas,Castrol,filtro de aceite,Suburban 2500,19,1993,34.05,no
+llantas,Castrol,filtro de aceite,Safari,6,1993,216.27,si
+luces,Mobil,pastillas de freno,Supra,20,1998,42.21,no
+transmisión,Bridgestone,filtro de aceite,Crossfire,9,2004,115.77,si
+llantas,Bosch,filtro de aire,Eclipse,19,1991,437.91,no
+frenos,Castrol,pastillas de freno,Liberty,19,2005,360.95,si
+frenos,Mobil,bujía,Charger,20,2009,380.16,no
+llantas,Michelin,correa de distribución,E-Class,4,2010,199.48,no
+motor,Michelin,filtro de aceite,Grand Prix,5,1985,34.27,si
+frenos,Mobil,filtro de aceite,SL-Class,13,1997,301.37,no
+transmisión,Michelin,filtro de aire,Matrix,6,2005,121.55,si
+motor,Bridgestone,correa de distribución,Continental GT,6,2009,71.58,si
+llantas,Mobil,filtro de aceite,Safari,6,1988,481.67,no
+motor,Castrol,correa de distribución,Falcon,11,1966,211.88,si
+transmisión,Michelin,filtro de aceite,Roadmaster,1,1991,149.62,no
+luces,Bosch,correa de distribución,Vibe,9,2005,76.86,si
+frenos,Bridgestone,pastillas de freno,Crown Victoria,5,2002,117.89,si
+transmisión,Mobil,filtro de aceite,Protege,17,2002,247.27,si
+luces,Bosch,filtro de aceite,Camaro,5,1976,70.78,si
+llantas,Bosch,bujía,Skylark,9,1992,152.33,si
+luces,Michelin,pastillas de freno,ES,20,2011,260.36,no
+llantas,Castrol,filtro de aceite,XT,9,1986,181.21,no
+transmisión,Castrol,filtro de aceite,Town Car,11,1984,286.74,si
+motor,Mobil,pastillas de freno,GS,2,1998,201.62,no
+frenos,Michelin,filtro de aceite,M-Class,2,1998,112.5,si
+llantas,Bosch,filtro de aire,V8,14,1990,406.05,no
+luces,Bridgestone,filtro de aceite,Tundra,15,2003,189.92,si
+frenos,Castrol,pastillas de freno,xB,20,2010,186.29,no
+motor,Mobil,bujía,M3,2,2002,198.42,si
+frenos,Bridgestone,bujía,Range Rover,18,1993,49.02,si
+motor,Bridgestone,filtro de aire,Pajero,17,1986,10.92,no
+llantas,Michelin,filtro de aceite,G-Series G30,3,1993,255.5,no
+llantas,Michelin,filtro de aire,Spirit,16,1993,348.02,no
+motor,Michelin,filtro de aire,TT,4,2010,108.77,no
+llantas,Mobil,filtro de aire,LTD Crown Victoria,13,1989,91.84,si
+frenos,Michelin,correa de distribución,Sierra 3500,7,2007,361.81,si
+luces,Castrol,pastillas de freno,Rodeo,1,2000,380.12,si
+transmisión,Bosch,bujía,Impreza WRX,10,2010,410.07,si
+motor,Bridgestone,bujía,Forester,16,2010,250.66,si
+llantas,Bosch,filtro de aire,rio,4,2001,454.01,no
+motor,Bosch,pastillas de freno,Grand Voyager,17,1996,174.6,si
+frenos,Castrol,filtro de aire,Yukon,7,2004,66.82,si
+llantas,Bosch,pastillas de freno,Mustang,9,1968,103.67,no
+llantas,Bosch,pastillas de freno,Eclipse,2,1993,132.87,si
+motor,Bosch,correa de distribución,Sterling,18,1991,381.96,no
+motor,Bosch,filtro de aire,Explorer Sport Trac,14,2010,342.01,no
+llantas,Mobil,filtro de aceite,Wrangler,2,2011,473.52,si
+motor,Bosch,pastillas de freno,Town & Country,17,2000,222.75,no
+motor,Bosch,filtro de aire,Quest,5,1993,366.81,si
+motor,Mobil,filtro de aceite,Clubman,14,2010,57.56,si
+transmisión,Bridgestone,bujía,1500 Club Coupe,16,1996,383.31,si
+motor,Castrol,bujía,4Runner,20,2002,120.75,si
+frenos,Mobil,filtro de aire,Explorer Sport Trac,17,2008,396.0,si
+transmisión,Michelin,correa de distribución,Express,20,2008,372.96,si
+transmisión,Castrol,pastillas de freno,TundraMax,2,2012,134.5,no
+motor,Bridgestone,correa de distribución,Fleetwood,10,1994,53.81,si
+frenos,Bridgestone,filtro de aceite,Wrangler,20,2007,87.5,no
+llantas,Bosch,pastillas de freno,Diamante,20,2004,376.86,no
+transmisión,Castrol,filtro de aceite,Mighty Max Macro,9,1993,37.66,no
+luces,Mobil,pastillas de freno,Frontier,2,2010,71.41,si
+transmisión,Bosch,correa de distribución,Genesis,9,2011,498.46,no
+motor,Bosch,bujía,Continental,19,1995,142.81,no
+motor,Bosch,filtro de aceite,Outlander,20,2008,385.97,si
+transmisión,Mobil,bujía,Town Car,19,1985,231.77,no
+frenos,Castrol,correa de distribución,Mazdaspeed6,19,2006,283.06,si
+luces,Mobil,correa de distribución,Stratus,15,1999,494.6,no
+transmisión,Mobil,correa de distribución,Town Car,19,1986,106.93,no
+transmisión,Mobil,pastillas de freno,Regency,17,1997,253.88,si
+luces,Mobil,pastillas de freno,Caravan,15,1992,276.35,si
+luces,Bosch,filtro de aceite,Legacy,3,2011,334.95,si
+transmisión,Mobil,filtro de aire,Probe,19,1995,481.42,si
+transmisión,Michelin,bujía,Firebird,7,1987,198.3,si
+transmisión,Mobil,pastillas de freno,8 Series,13,1997,145.7,no
+frenos,Michelin,filtro de aire,Sedona,11,2009,258.93,no
+frenos,Mobil,pastillas de freno,Suburban 1500,20,1995,381.88,no
+transmisión,Bosch,bujía,RDX,19,2012,392.45,si
+llantas,Castrol,pastillas de freno,Fusion,3,2006,246.66,no
+motor,Michelin,pastillas de freno,98,1,1993,219.97,si
+frenos,Michelin,filtro de aceite,Grand Caravan,13,2010,234.45,si
+transmisión,Castrol,filtro de aceite,Sienna,7,2005,387.49,si
+motor,Bridgestone,pastillas de freno,Econoline E350,17,1993,55.89,si
+luces,Bosch,filtro de aceite,Patriot,4,2011,227.98,no
+llantas,Mobil,pastillas de freno,Yaris,12,2011,33.06,no
+transmisión,Mobil,filtro de aceite,Trooper,3,1999,278.84,si
+motor,Bridgestone,filtro de aire,F-Series Super Duty,17,2008,294.41,no
+llantas,Castrol,filtro de aceite,Range Rover,12,1995,249.6,si
+luces,Michelin,correa de distribución,Sienna,3,2009,459.84,si
+motor,Castrol,filtro de aire,228,20,1989,495.53,si
+frenos,Michelin,filtro de aire,Escalade,14,2012,22.33,si
+frenos,Castrol,pastillas de freno,Gallardo,18,2005,492.3,no
+llantas,Mobil,filtro de aceite,4Runner,2,1994,268.08,si
+llantas,Michelin,correa de distribución,Firebird,2,1991,454.35,no
+luces,Bosch,bujía,CX-9,19,2007,97.97,si
+luces,Bosch,correa de distribución,Camaro,17,1968,68.88,no
+frenos,Castrol,correa de distribución,Escape,2,2006,153.65,no
+transmisión,Mobil,bujía,Taurus,10,1994,202.71,si
+luces,Mobil,filtro de aire,Capri,19,1991,375.78,no
+motor,Mobil,filtro de aceite,F-Series,10,1996,151.53,si
+frenos,Bosch,correa de distribución,Durango,14,2011,359.2,si
+frenos,Bridgestone,pastillas de freno,Traverse,14,2012,108.29,no
+llantas,Bridgestone,pastillas de freno,Sportage,17,2012,147.58,no
+transmisión,Castrol,bujía,Hemisfear,5,2007,262.17,si
+luces,Mobil,bujía,Type 2,19,1988,56.76,no
+motor,Bosch,pastillas de freno,Skylark,4,1989,270.11,si
+transmisión,Mobil,filtro de aire,F-Series,6,2005,392.85,si
+luces,Castrol,filtro de aire,IS,10,2012,264.02,no
+motor,Bridgestone,filtro de aire,Th!nk,2,2000,249.18,no
+transmisión,Bridgestone,pastillas de freno,Diamante,14,2002,363.17,si
+motor,Michelin,bujía,6000,12,1988,299.61,no
+frenos,Castrol,bujía,Legacy,7,2010,311.67,no
+frenos,Bridgestone,filtro de aceite,Fox,3,1990,148.53,si
+transmisión,Bosch,pastillas de freno,Z3,3,1999,147.97,si
+luces,Castrol,filtro de aire,H1,5,1996,232.63,si
+transmisión,Castrol,bujía,Concorde,12,2002,357.25,no
+transmisión,Bridgestone,correa de distribución,Elantra,10,2006,273.71,no
+llantas,Castrol,bujía,SC,7,1997,93.75,no
+motor,Castrol,pastillas de freno,Chariot,20,1995,317.89,no
+llantas,Michelin,correa de distribución,Continental Flying Spur,12,2007,420.85,si
+motor,Bridgestone,bujía,Park Avenue,20,1995,36.61,no
+transmisión,Bosch,pastillas de freno,G6,8,2009,389.09,no
+frenos,Mobil,filtro de aire,Galant,17,1996,383.81,si
+luces,Castrol,filtro de aire,Avalanche,1,2007,338.68,no
+motor,Bridgestone,bujía,E-Class,15,1989,197.43,no
+frenos,Michelin,filtro de aceite,TrailBlazer,3,2007,165.34,no
+frenos,Castrol,filtro de aire,Lancer,14,2012,267.74,no
+llantas,Bosch,pastillas de freno,Trooper,1,1994,493.06,no
+luces,Bridgestone,filtro de aceite,Express 1500,11,2002,353.3,si
+luces,Bosch,filtro de aire,Expedition EL,5,2007,498.32,no
+motor,Michelin,filtro de aceite,Celica,11,1993,156.5,si
+motor,Bridgestone,filtro de aire,B-Series Plus,9,2001,481.62,no
+motor,Bridgestone,filtro de aceite,Ram 1500,8,1996,482.35,no
+transmisión,Bosch,correa de distribución,Silverado,15,2010,498.27,no
+motor,Mobil,pastillas de freno,Range Rover Sport,11,2009,182.74,no
+transmisión,Bridgestone,pastillas de freno,Thunderbird,10,1996,308.15,no
+frenos,Bridgestone,filtro de aire,SLK-Class,16,2008,247.35,no
+luces,Bosch,filtro de aceite,Cabriolet,10,1994,210.21,no
+frenos,Castrol,filtro de aceite,Golf,3,1999,152.06,si
+luces,Mobil,bujía,Laser,20,1988,486.2,si
+llantas,Castrol,correa de distribución,B2600,9,1989,221.55,si
+transmisión,Michelin,filtro de aceite,Coachbuilder,13,1995,150.62,no
+frenos,Michelin,bujía,Mustang,2,1999,257.75,no
+frenos,Mobil,filtro de aire,riolet,5,1993,216.69,si
+frenos,Bridgestone,bujía,CLK-Class,18,2005,186.4,no
+transmisión,Castrol,filtro de aire,Charger,5,1969,90.91,si
+frenos,Bosch,filtro de aceite,E150,18,2005,295.41,no
+frenos,Bridgestone,bujía,Sonata,1,2006,60.79,no
+frenos,Mobil,filtro de aire,i-Series,17,2008,129.19,no
+transmisión,Mobil,filtro de aceite,Five Hundred,6,2006,481.9,no
+luces,Castrol,correa de distribución,Sonata,16,1993,374.65,si
+frenos,Michelin,pastillas de freno,Wrangler,13,1992,281.28,si
+luces,Mobil,filtro de aire,GranTurismo,8,2009,288.1,si
+frenos,Bosch,pastillas de freno,Caravan,3,2004,42.45,si
+transmisión,Bosch,bujía,Metro,2,2001,91.87,no
+frenos,Bridgestone,filtro de aceite,Santa Fe,20,2005,198.65,no
+luces,Bosch,pastillas de freno,Ranger,18,2006,29.77,si
+transmisión,Bridgestone,bujía,7 Series,9,1995,135.48,no
+luces,Castrol,bujía,Montero,5,1999,328.28,si
+llantas,Michelin,filtro de aceite,Boxster,5,2004,363.41,si
+frenos,Bridgestone,pastillas de freno,Explorer,19,2009,290.9,si
+motor,Mobil,pastillas de freno,E-Series,18,2003,410.19,no
+frenos,Bosch,pastillas de freno,E-Series,15,1989,459.03,si
+transmisión,Bridgestone,filtro de aire,Savana 3500,9,2002,245.02,si
+llantas,Michelin,bujía,Swift,18,2004,397.75,no
+frenos,Castrol,correa de distribución,Sable,18,2009,443.7,no
+luces,Michelin,bujía,H2 SUV,4,2006,334.46,si
+luces,Mobil,pastillas de freno,F-Series,1,1985,337.65,no
+llantas,Bridgestone,filtro de aceite,V70,12,2002,283.52,si
+transmisión,Castrol,filtro de aceite,Caprice Classic,3,1994,61.96,no
+llantas,Castrol,bujía,Five Hundred,6,2007,276.21,si
+motor,Bosch,filtro de aire,Ram 3500 Club,7,1996,473.76,no
+llantas,Castrol,filtro de aire,Avenger,16,1997,417.22,si
+frenos,Mobil,filtro de aire,Eos,8,2007,21.35,no
+transmisión,Bosch,bujía,Cooper,18,2003,188.56,si
+llantas,Mobil,pastillas de freno,Sonata,11,1996,498.44,si
+motor,Castrol,bujía,Z4,9,2004,251.01,si
+frenos,Bridgestone,filtro de aceite,Camaro,18,2000,302.92,si
+frenos,Bridgestone,filtro de aire,Suburban 2500,2,2009,433.42,si
+llantas,Castrol,bujía,Gemini,18,1989,195.58,no
+luces,Castrol,pastillas de freno,Truck,13,1996,93.98,no
+frenos,Mobil,bujía,M-Class,18,2008,103.18,no
+llantas,Bridgestone,bujía,Quest,5,2009,481.56,no
+frenos,Bosch,filtro de aceite,Lumina,10,2000,195.25,si
+frenos,Mobil,pastillas de freno,Grand Am,5,1989,244.66,si
+frenos,Bridgestone,filtro de aire,Camry,5,2000,198.73,si
