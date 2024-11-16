@@ -309,6 +309,63 @@ void insertarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const repues
     }
 }
 
+void guardarVehiculosTemp(const vehiculo vehiculos[], int cantidad) {
+    ofstream archivo("Vehiculos_temp.csv");
+    if (archivo.is_open()) {
+        for (int i = 0; i < cantidad; ++i) {
+            archivo << vehiculos[i].modelo << ","
+                    << vehiculos[i].marca << ","
+                    << vehiculos[i].placa << ","
+                    << vehiculos[i].color << ","
+                    << vehiculos[i].year << ","
+                    << vehiculos[i].kilometraje << ","
+                    << (vehiculos[i].rentado ? "si" : "no") << ","
+                    << vehiculos[i].motor << ","
+                    << vehiculos[i].precio_renta << ","
+                    << vehiculos[i].cedula_cliente << ","
+                    << vehiculos[i].fecha_entrega << endl;
+        }
+        archivo.close();
+    } else {
+        cerr << "No se pudo abrir el archivo temporal de vehículos." << endl;
+    }
+}
+
+void guardarClientesTemp(const Cliente clientes[], int cantidad) {
+    ofstream archivo("Clientes_temp.csv");
+    if (archivo.is_open()) {
+        for (int i = 0; i < cantidad; ++i) {
+            archivo << clientes[i].cedula << ","
+                    << clientes[i].nombre << ","
+                    << clientes[i].apellido << ","
+                    << clientes[i].email << ","
+                    << clientes[i].cantidad_vehiculos_rentados << ","
+                    << clientes[i].direccion << ","
+                    << (clientes[i].activo ? "true" : "false") << endl;
+        }
+        archivo.close();
+    } else {
+        cerr << "No se pudo abrir el archivo temporal de clientes." << endl;
+    }
+}
+
+void guardarRepuestosTemp(const repuesto repuestos[], int cantidad) {
+    ofstream archivo("Repuestos_temp.csv");
+    if (archivo.is_open()) {
+        for (int i = 0; i < cantidad; ++i) {
+            archivo << repuestos[i].modelo_repuesto << ","
+                    << repuestos[i].marca_repuesto << ","
+                    << repuestos[i].nombre_repuesto << ","
+                    << repuestos[i].modelo_carro << ","
+                    << repuestos[i].year_auto << ","
+                    << repuestos[i].precio << ","
+                    << (repuestos[i].existencias ? "true" : "false") << endl;
+        }
+        archivo.close();
+    } else {
+        cerr << "No se pudo abrir el archivo temporal de repuestos." << endl;
+    }
+}
 
 int main() {
     vehiculo vehiculos[1000];
@@ -331,7 +388,7 @@ int main() {
         cout << "6. Insertar Cliente\n";
         cout << "7. Insertar Vehículo\n"; 
         cout << "8. Insertar Repuesto\n"; 
-        cout << "desea buscar algo en especifico?\n"
+        cout << "desea buscar algo en especifico?\n";
         cout << "9. Buscar Vehículo\n";
         cout << "10. Buscar Cliente\n";
         cout << "11. Buscar Repuesto\n";
