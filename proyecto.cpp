@@ -161,6 +161,21 @@ void buscarRepuesto(const repuesto repuestos[], int cantidad) {
     cout << "Ingrese la marca del repuesto que desea buscar: ";
     cin >> marcaBuscada;
 
+bool encontrado = false;
+    cout << "Repuestos encontrados:\n";
+    for (int i = 0; i < cantidad; i++) {
+        if (repuestos[i].marca_repuesto == marcaBuscada) {
+            cout << "Modelo del repuesto: " << repuestos[i].modelo_repuesto << "\n"
+                 << "Marca del repuesto: " << repuestos[i].marca_repuesto << "\n"
+                 << "Nombre del repuesto: " << repuestos[i].nombre_repuesto << "\n"
+                 << "Modelo del carro: " << repuestos[i].modelo_carro << "\n"
+                 << "Año del auto: " << repuestos[i].year_auto << "\n"
+                 << "Precio: " << repuestos[i].precio << "\n"
+                 << "Existencias: " << (repuestos[i].existencias ? "Sí" : "No") << "\n\n";
+            encontrado = true;
+        }
+    }
+
 
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
