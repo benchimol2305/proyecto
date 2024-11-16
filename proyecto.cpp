@@ -185,6 +185,23 @@ void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos
     guardarRepuestos(repuestos, cantidadRepuestos);
 }
 
+void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehiculos[], int cantidadVehiculos, const Cliente& clienteActualizado) {
+    for (int i = 0; i < cantidadClientes; ++i) {
+        if (clientes[i].cedula == clienteActualizado.cedula) {
+            clientes[i] = clienteActualizado; 
+            break;
+        }
+    }
+    
+    for (int i = 0; i < cantidadVehiculos; ++i) {
+        if (vehiculos[i].cedula_cliente == clienteActualizado.cedula) {
+            vehiculos[i].cedula_cliente = clienteActualizado.cedula; 
+        }
+    }
+    guardarClientes(clientes, cantidadClientes);
+    guardarVehiculos(vehiculos, cantidadVehiculos);
+}
+
 int main() {
     vehiculo vehiculos[1000];
     Cliente clientes[1000];
