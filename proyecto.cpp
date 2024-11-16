@@ -501,7 +501,9 @@ int main() {
                 break;
             }
             case 9: buscarVehiculo(vehiculos, cantidadVehiculos);
-			 break;
+		 break;
+	    case 10: buscarCliente(clientes, cantidadClientes); 
+		break;
             
             case 12: {
                 cout << "Saliendo del programa.\n" << endl;
