@@ -250,17 +250,16 @@ void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos
         }
         cantidadClientes--;
     }
-    
     for (int i = 0; i < cantidadVehiculos; ++i) {
         if (vehiculos[i].cedula_cliente == cedula) {
-            vehiculos[i].cedula_cliente = ""; 
+            vehiculos[i].cedula_cliente = ""; // Desasociar el vehículo
         }
     }
-    
-    guardarClientes(clientes, cantidadClientes);
-    guardarVehiculos(vehiculos, cantidadVehiculos);
-    guardarRepuestos(repuestos, cantidadRepuestos);
+    guardarClientesTemp(clientes, cantidadClientes);
+    guardarVehiculosTemp(vehiculos, cantidadVehiculos);
+    guardarRepuestosTemp(repuestos, cantidadRepuestos);
 }
+
 
 void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehiculos[], int cantidadVehiculos, const Cliente& clienteActualizado) {
     for (int i = 0; i < cantidadClientes; ++i) {
@@ -269,43 +268,45 @@ void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehicu
             break;
         }
     }
-    
     for (int i = 0; i < cantidadVehiculos; ++i) {
         if (vehiculos[i].cedula_cliente == clienteActualizado.cedula) {
             vehiculos[i].cedula_cliente = clienteActualizado.cedula; 
         }
     }
-    guardarClientes(clientes, cantidadClientes);
-    guardarVehiculos(vehiculos, cantidadVehiculos);
+    guardarClientesTemp(clientes, cantidadClientes);
+    guardarVehiculosTemp(vehiculos, cantidadVehiculos);
 }
+
 
 void insertarCliente(Cliente clientes[], int &cantidadClientes, const Cliente& nuevoCliente) {
     if (cantidadClientes < 1000) {
         clientes[cantidadClientes] = nuevoCliente;
         cantidadClientes++;
-        guardarClientes(clientes, cantidadClientes);
+        guardarClientesTemp(clientes, cantidadClientes);
     } else {
-        cerr << "No se puede insertar mas clientes, limite alcanzado." << endl;
+        cerr << "No se puede insertar más clientes, límite alcanzado." << endl;
     }
 }
+
 
 void insertarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const vehiculo& nuevoVehiculo) {
     if (cantidadVehiculos < 1000) {
         vehiculos[cantidadVehiculos] = nuevoVehiculo;
         cantidadVehiculos++;
-        guardarVehiculos(vehiculos, cantidadVehiculos);
+        guardarVehiculosTemp(vehiculos, cantidadVehiculos);
     } else {
-        cerr << "No se puede insertar mas vehículos, limite alcanzado." << endl;
+        cerr << "No se puede insertar más vehículos, límite alcanzado." << endl;
     }
 }
+
 
 void insertarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const repuesto& nuevoRepuesto) {
     if (cantidadRepuestos < 1000) {
         repuestos[cantidadRepuestos] = nuevoRepuesto;
         cantidadRepuestos++;
-        guardarRepuestos(repuestos, cantidadRepuestos);
+        guardarRepuestosTemp(repuestos, cantidadRepuestos);
     } else {
-        cerr << "No se puede insertar mas repuestos, limite alcanzado." << endl;
+        cerr << "No se puede insertar más repuestos, límite alcanzado." << endl;
     }
 }
 
@@ -410,7 +411,8 @@ int main() {
         cout << "9. Buscar Vehículo\n";
         cout << "10. Buscar Cliente\n";
         cout << "11. Buscar Repuesto\n";
-        cout << "12. Salir\n";
+        cout << "12. Confirmar Cambios\n";
+        cout << "13. Salir\n";
         cout << "Ingrese su opción: "; 
         cin >> opcion; 
         cin.ignore(100, '\n');
@@ -580,7 +582,11 @@ int main() {
 		break;
 	    case 11: buscarRepuesto(repuestos, cantidadRepuestos); 
 		break;
-            case 12: {
+        case 12: {
+            confirmarCambios();
+            break;
+        }
+            case 13: {
                 cout << "Saliendo del programa.\n" << endl;
                 return 0;
             }
