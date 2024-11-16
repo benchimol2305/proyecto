@@ -151,6 +151,10 @@ void buscarCliente(const Cliente clientes[], int cantidad) {
             break;
         }
     } 
+if (!encontrado) {
+        cout << "Cliente no encontrado.\n";
+    }
+}
 
 
 
