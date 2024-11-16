@@ -131,6 +131,10 @@ bool encontrado = false;
     }
 }
 
+void buscarCliente(const Cliente clientes[], int cantidad) {
+    string cedulaBuscada;
+    cout << "Ingrese la cédula del cliente que desea buscar: ";
+    cin >> cedulaBuscada;
 
 void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
