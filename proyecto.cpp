@@ -202,6 +202,37 @@ void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehicu
     guardarVehiculos(vehiculos, cantidadVehiculos);
 }
 
+void insertarCliente(Cliente clientes[], int &cantidadClientes, const Cliente& nuevoCliente) {
+    if (cantidadClientes < 1000) {
+        clientes[cantidadClientes] = nuevoCliente;
+        cantidadClientes++;
+        guardarClientes(clientes, cantidadClientes);
+    } else {
+        cerr << "No se puede insertar mas clientes, limite alcanzado." << endl;
+    }
+}
+
+void insertarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const vehiculo& nuevoVehiculo) {
+    if (cantidadVehiculos < 1000) {
+        vehiculos[cantidadVehiculos] = nuevoVehiculo;
+        cantidadVehiculos++;
+        guardarVehiculos(vehiculos, cantidadVehiculos);
+    } else {
+        cerr << "No se puede insertar mas vehículos, limite alcanzado." << endl;
+    }
+}
+
+void insertarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const repuesto& nuevoRepuesto) {
+    if (cantidadRepuestos < 1000) {
+        repuestos[cantidadRepuestos] = nuevoRepuesto;
+        cantidadRepuestos++;
+        guardarRepuestos(repuestos, cantidadRepuestos);
+    } else {
+        cerr << "No se puede insertar mas repuestos, limite alcanzado." << endl;
+    }
+}
+
+
 int main() {
     vehiculo vehiculos[1000];
     Cliente clientes[1000];
@@ -291,7 +322,7 @@ int main() {
                     cout << "Introduce la cédula del cliente a actualizar: ";
                     cin >> clienteActualizado.cedula;
                     cout << "Introduce el nuevo nombre: ";
-                    cin.ignore(); // Para limpiar el buffer de entrada
+                    cin.ignore(); 
                     getline(cin, clienteActualizado.nombre);
                     cout << "Introduce el nuevo apellido: ";
                     getline(cin, clienteActualizado.apellido);
@@ -301,17 +332,90 @@ int main() {
                     getline(cin, clienteActualizado.cantidad_vehiculos_rentados);
                     cout << "Introduce la nueva dirección: ";
                     getline(cin, clienteActualizado.direccion);
-                    cout << "Esta activo? (1 para sí, 0 para no): ";
+                    cout << "Esta activo? (1 para si, 0 para no): ";
                     cin >> clienteActualizado.activo;
 
                     actualizarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, clienteActualizado);
-                    cout << "Cliente con cédula " << clienteActualizado.cedula << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+                    cout << "Cliente con cedula " << clienteActualizado.cedula << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
                 }
                 break;
 
-            case 6:
-                cout << "Saliendo del programa...\n";
-                return 0;
+                        case 6: {
+                Cliente nuevoCliente;
+                cout << "Introduce la cedula del nuevo cliente: ";
+                cin >> nuevoCliente.cedula;
+                cout << "Introduce el nombre del nuevo cliente: ";
+                cin.ignore(); 
+                getline(cin, nuevoCliente.nombre);
+                cout << "Introduce el apellido del nuevo cliente: ";
+                getline(cin, nuevoCliente.apellido);
+                cout << "Introduce el email del nuevo cliente: ";
+                getline(cin, nuevoCliente.email);
+                cout << "Introduce la cantidad de vehiculos rentados: ";
+                getline(cin, nuevoCliente.cantidad_vehiculos_rentados);
+                cout << "Introduce la direccion del nuevo cliente: ";
+                getline(cin, nuevoCliente.direccion);
+                cout << "¿Está activo? (1 para si, 0 para no): ";
+                cin >> nuevoCliente.activo;
+
+                insertarCliente(clientes, cantidadClientes, nuevoCliente);
+                cout << "Cliente insertado con exito." << endl;
+                break;
+            }
+            case 7: {
+                vehiculo nuevoVehiculo;
+                cout << "Introduce el modelo del nuevo vehiculo: ";
+                cin >> nuevoVehiculo.modelo;
+                cout << "Introduce la marca del nuevo vehiculo: ";
+                cin.ignore(); 
+                getline(cin, nuevoVehiculo.marca);
+                cout << "Introduce la placa del nuevo vehiculo: ";
+                getline(cin, nuevoVehiculo.placa);
+                cout << "Introduce el color del nuevo vehiculo: ";
+                getline(cin, nuevoVehiculo.color);
+                cout << "Introduce el año del nuevo vehiculo: ";
+                getline(cin, nuevoVehiculo.year);
+                cout << "Introduce el kilometraje del nuevo vehiculo: ";
+                getline(cin, nuevoVehiculo.kilometraje);
+                cout << "Esta rentado? (1 para sí, 0 para no): ";
+                cin >> nuevoVehiculo.rentado;
+                cout << "Introduce el motor del nuevo vehículo: ";
+                cin.ignore(); 
+                getline(cin, nuevoVehiculo.motor);
+                cout << "Introduce el precio de renta del nuevo vehiculo: ";
+                getline(cin, nuevoVehiculo.precio_renta);
+                cout << "Introduce la cédula del cliente: ";
+                getline(cin, nuevoVehiculo.cedula_cliente);
+                cout << "Introduce la fecha de entrega: ";
+                getline(cin, nuevoVehiculo.fecha_entrega);
+
+                insertarVehiculo(vehiculos, cantidadVehiculos, nuevoVehiculo);
+                cout << "Vehiculo insertado con exito." << endl;
+                break;
+            }
+            case 8: {
+                repuesto nuevoRepuesto;
+                cout << "Introduce el modelo del nuevo repuesto: ";
+                cin >> nuevoRepuesto.modelo_repuesto;
+                cout << "Introduce la marca del nuevo repuesto: ";
+                cin.ignore(); 
+                getline(cin, nuevoRepuesto.marca_repuesto);
+                cout << "Introduce el nombre del nuevo repuesto: ";
+                getline(cin, nuevoRepuesto.nombre_repuesto);
+                cout << "Introduce el modelo del carro: ";
+                getline(cin, nuevoRepuesto.modelo_carro);
+                cout << "Introduce el año del auto: ";
+                getline(cin, nuevoRepuesto.year_auto);
+                cout << "Introduce el precio del repuesto: ";
+                getline(cin, nuevoRepuesto.precio);
+                cout << "Hay existencias? (1 para si, 0 para no): ";
+                cin >> nuevoRepuesto.existencias;
+
+                insertarRepuesto(repuestos, cantidadRepuestos, nuevoRepuesto);
+                cout << "Repuesto insertado con exito." << endl;
+                break;
+            }
+
             default:
                 cout << "Opcion no valida, por favor ingrese una opcion correcta.\n";
                 continue;
