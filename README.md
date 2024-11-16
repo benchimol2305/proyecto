@@ -10,7 +10,18 @@ Clona el repositorio usando:
 Una vez clonado el repositorio, para ejecutar la aplicacion, usa el siguiente comando desde la terminal:
   ./proyecto.cpp
 El programa te presentará un menú interactivo donde podrás:
--Ver los datos de vehículos, clientes y repuestos. 
--Insertar nuevos datos.
--Actualizar datos existentes.
--Borrar
+Ver los datos de vehículos, clientes y repuestos. 
+Insertar nuevos datos.
+Actualizar datos existentes.
+Borrar
+
+Las contribuciones son bienvenidas 😃 
+Sigue estos pasos para contribuir
+1. Haz un fork del proyecto. (Click en el boton Fork en la pagina original del repositorio)
+2. Crea una nueva rama usando: git checkout -b "nombre de la rama"
+3. Realiza los cambios necesarios y haz un commit. (git commit -m "Comentario"
+4. Sube los cambios. (git push -u origin "Nombre de la rama que creaste"
+5. Crea un pull request. (Es como una solicitud formal que le envías al dueño del proyecto)
+
+Contacto
+Luis Chirinos - Email - luisemilio2006@gmail.com
