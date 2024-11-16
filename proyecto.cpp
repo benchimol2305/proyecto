@@ -125,8 +125,7 @@ bool encontrado = false;
             encontrado = true;
         }
     }
-
-  if (!encontrado) {
+ if (!encontrado) {
         cout << "Vehículo no encontrado.\n";
     }
 }
@@ -504,9 +503,8 @@ int main() {
 		 break;
 	    case 10: buscarCliente(clientes, cantidadClientes); 
 		break;
-	    case 6: buscarRepuesto(repuestos, cantidadRepuestos); 
+	    case 11: buscarRepuesto(repuestos, cantidadRepuestos); 
 		break;
-            
             case 12: {
                 cout << "Saliendo del programa.\n" << endl;
                 return 0;
