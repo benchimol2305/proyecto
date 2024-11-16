@@ -24,5 +24,5 @@ Sigue estos pasos para contribuir
 5. Crea un pull request. (Es como una solicitud formal que le envías al dueño del proyecto)
 
 Contacto
-Luis Chirinos - Email - luisemilio2006@gmail.com
-Eldi Rangel - Email - eldi456.rangel@gmail.com
+ - Luis Chirinos - Email - luisemilio2006@gmail.com
+ - Eldi Rangel - Email - eldi456.rangel@gmail.com
