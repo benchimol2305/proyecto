@@ -500,7 +500,10 @@ int main() {
                 cout << "Repuesto insertado con exito." << endl;
                 break;
             }
-            case 9: {
+            case 9: buscarVehiculo(vehiculos, cantidadVehiculos);
+			 break;
+            
+            case 12: {
                 cout << "Saliendo del programa.\n" << endl;
                 return 0;
             }
