@@ -282,9 +282,35 @@ int main() {
                 break;
 
             case 5:
+                leerClientes(clientes, cantidadClientes);
+                leervehiculos(vehiculos, cantidadVehiculos);
+
+                {
+                    Cliente clienteActualizado;
+                    cout << "Introduce la cédula del cliente a actualizar: ";
+                    cin >> clienteActualizado.cedula;
+                    cout << "Introduce el nuevo nombre: ";
+                    cin.ignore(); // Para limpiar el buffer de entrada
+                    getline(cin, clienteActualizado.nombre);
+                    cout << "Introduce el nuevo apellido: ";
+                    getline(cin, clienteActualizado.apellido);
+                    cout << "Introduce el nuevo email: ";
+                    getline(cin, clienteActualizado.email);
+                    cout << "Introduce la cantidad de vehículos rentados: ";
+                    getline(cin, clienteActualizado.cantidad_vehiculos_rentados);
+                    cout << "Introduce la nueva dirección: ";
+                    getline(cin, clienteActualizado.direccion);
+                    cout << "Esta activo? (1 para sí, 0 para no): ";
+                    cin >> clienteActualizado.activo;
+
+                    actualizarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, clienteActualizado);
+                    cout << "Cliente con cédula " << clienteActualizado.cedula << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+                }
+                break;
+
+            case 6:
                 cout << "Saliendo del programa...\n";
                 return 0;
-
             default:
                 cout << "Opcion no valida, por favor ingrese una opcion correcta.\n";
                 continue;
@@ -296,3 +322,4 @@ int main() {
 
     return 0;
 }
+
