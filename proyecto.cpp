@@ -104,23 +104,23 @@ void leerRepuestos(repuesto repuestos[], int &cantidad) {
 
 void buscarVehiculo(const vehiculo vehiculos[], int cantidad) {
     string modeloBuscado;
-    cout << "Ingrese el modelo del vehículo que desea buscar: ";
+    cout << "Ingrese el modelo del vehiculo que desea buscar: ";
     cin >> modeloBuscado;
 
 bool encontrado = false;
-    cout << "Vehículos encontrados:\n";
+    cout << "Vehiculos encontrados:\n";
     for (int i = 0; i < cantidad; i++) {
         if (vehiculos[i].modelo == modeloBuscado) {
             cout << "Modelo: " << vehiculos[i].modelo << "\n"
                  << "Marca: " << vehiculos[i].marca << "\n"
                  << "Placa: " << vehiculos[i].placa << "\n"
                  << "Color: " << vehiculos[i].color << "\n"
-                 << "Año: " << vehiculos[i].year << "\n"
+                 << "Fecha de salida: " << vehiculos[i].year << "\n"
                  << "Kilometraje: " << vehiculos[i].kilometraje << "\n"
-                 << "Rentado: " << (vehiculos[i].rentado ? "Sí" : "No") << "\n"
+                 << "Rentado: " << (vehiculos[i].rentado ? "Si" : "No") << "\n"
                  << "Motor: " << vehiculos[i].motor << "\n"
                  << "Precio de renta: " << vehiculos[i].precio_renta << "\n"
-                 << "Cédula del cliente: " << vehiculos[i].cedula_cliente << "\n"
+                 << "Cedula del cliente: " << vehiculos[i].cedula_cliente << "\n"
                  << "Fecha de entrega: " << vehiculos[i].fecha_entrega << "\n\n";
             encontrado = true;
         }
@@ -145,7 +145,7 @@ void buscarCliente(const Cliente clientes[], int cantidad) {
                  << "Email: " << clientes[i].email << "\n"
                  << "Cantidad de vehiculos rentados: " << clientes[i].cantidad_vehiculos_rentados << "\n"
                  << "Direccion: " << clientes[i].direccion << "\n"
-                 << "Activo: " << (clientes[i].activo ? "Sí" : "No") << "\n";
+                 << "Activo: " << (clientes[i].activo ? "Si" : "No") << "\n";
             encontrado = true;
             break;
         }
@@ -168,9 +168,9 @@ bool encontrado = false;
                  << "Marca del repuesto: " << repuestos[i].marca_repuesto << "\n"
                  << "Nombre del repuesto: " << repuestos[i].nombre_repuesto << "\n"
                  << "Modelo del carro: " << repuestos[i].modelo_carro << "\n"
-                 << "Año del auto: " << repuestos[i].year_auto << "\n"
+                 << "Fecha de salida del auto: " << repuestos[i].year_auto << "\n"
                  << "Precio: " << repuestos[i].precio << "\n"
-                 << "Existencias: " << (repuestos[i].existencias ? "Sí" : "No") << "\n\n";
+                 << "Existencias: " << (repuestos[i].existencias ? "Si" : "No") << "\n\n";
             encontrado = true;
         }
     }
@@ -197,7 +197,7 @@ void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
         }
         archivo.close();
     } else {
-        cerr << "No se pudo abrir el archivo de vehículos." << endl;
+        cerr << "No se pudo abrir el archivo de vehiculos." << endl;
     }
 }
 
@@ -252,7 +252,7 @@ void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos
     }
     for (int i = 0; i < cantidadVehiculos; ++i) {
         if (vehiculos[i].cedula_cliente == cedula) {
-            vehiculos[i].cedula_cliente = ""; // Desasociar el vehículo
+            vehiculos[i].cedula_cliente = ""; 
         }
     }
     guardarClientes(clientes, cantidadClientes);
@@ -284,7 +284,7 @@ void insertarCliente(Cliente clientes[], int &cantidadClientes, const Cliente& n
         cantidadClientes++;
         guardarClientes(clientes, cantidadClientes);
     } else {
-        cerr << "No se puede insertar más clientes, límite alcanzado." << endl;
+        cerr << "No se puede insertar más clientes, limite alcanzado." << endl;
     }
 }
 
@@ -295,7 +295,7 @@ void insertarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const vehicu
         cantidadVehiculos++;
         guardarVehiculos(vehiculos, cantidadVehiculos);
     } else {
-        cerr << "No se puede insertar más vehículos, límite alcanzado." << endl;
+        cerr << "No se puede insertar más vehiculos, limite alcanzado." << endl;
     }
 }
 
@@ -306,7 +306,7 @@ void insertarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const repues
         cantidadRepuestos++;
         guardarRepuestos(repuestos, cantidadRepuestos);
     } else {
-        cerr << "No se puede insertar más repuestos, límite alcanzado." << endl;
+        cerr << "No se puede insertar más repuestos, limite alcanzado." << endl;
     }
 }
 
@@ -516,7 +516,7 @@ int main() {
                 getline(cin, nuevoCliente.cantidad_vehiculos_rentados);
                 cout << "Introduce la direccion del nuevo cliente: ";
                 getline(cin, nuevoCliente.direccion);
-                cout << "¿Está activo? (1 para si, 0 para no): ";
+                cout << "Está activo? (1 para si, 0 para no): ";
                 cin >> nuevoCliente.activo;
 
                 insertarCliente(clientes, cantidadClientes, nuevoCliente);
@@ -576,7 +576,7 @@ int main() {
                 cout << "Repuesto insertado con exito." << endl;
                 break;
             }
-            case 9: buscarVehiculo(vehiculos, cantidadVehiculos);
+        case 9: buscarVehiculo(vehiculos, cantidadVehiculos);
 		 break;
 	    case 10: buscarCliente(clientes, cantidadClientes); 
 		break;
