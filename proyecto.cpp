@@ -398,6 +398,16 @@ string getCurrentTimestamp() {
     return timestamp.str();
 }
 
+void createBackup(const string& sourceFile) {
+    string timestamp = getCurrentTimestamp();
+    string backupFile = "backups/" + sourceFile.substr(0, sourceFile.find_last_of('.')) + "_" + timestamp + sourceFile.substr(sourceFile.find_last_of('.'));
+    ifstream src(sourceFile, ios::binary);
+    ofstream dst(backupFile, ios::binary);
+    dst << src.rdbuf();
+    src.close();
+    dst.close();
+}
+
 int main() {
     vehiculo vehiculos[1000];
     Cliente clientes[1000];
