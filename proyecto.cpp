@@ -2,6 +2,10 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <chrono>
+#include <iomanip>
+#include <cstdlib>
+
 using namespace std;
 
 struct vehiculo {
@@ -384,6 +388,14 @@ void confirmarCambios() {
         remove("Repuestos_temp.csv");
         cout << "Cambios descartados." << endl;
     }
+}
+
+string getCurrentTimestamp() {
+    auto now = chrono::system_clock::now();
+    time_t now_c = chrono::system_clock::to_time_t(now);
+    stringstream timestamp;
+    timestamp << put_time(localtime(&now_c), "%Y-%m-%d_%H-%M-%S");
+    return timestamp.str();
 }
 
 int main() {
