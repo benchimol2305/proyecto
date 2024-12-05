@@ -408,7 +408,25 @@ void createBackup(const string& sourceFile) {
     dst.close();
 }
 
+void backupAllFiles() {
+    system("mkdir backups");
+    string sourceFile1 = "Vehiculos.csv";
+    string sourceFile2 = "Repuestos.csv";
+    string sourceFile3 = "Clientes.csv";
+    createBackup(sourceFile1);
+    cout << "Copia de seguridad creada para " << sourceFile1 << " exitosamente." << endl;
+    createBackup(sourceFile2);
+    cout << "Copia de seguridad creada para " << sourceFile2 << " exitosamente." << endl;
+    createBackup(sourceFile3);
+    cout << "Copia de seguridad creada para " << sourceFile3 << " exitosamente." << endl;
+}
+
 int main() {
+    system("mkdir backups");
+    atexit(backupAllFiles);
+    string sourceFile1 = "Vehiculos.csv";
+    string sourceFile2 = "Repuestos.csv";
+    string sourceFile3 = "Clientes.csv";
     vehiculo vehiculos[1000];
     Cliente clientes[1000];
     repuesto repuestos[1000];
@@ -618,5 +636,17 @@ int main() {
         cin >> continuar;
     } while (continuar == 's' || continuar == 'S');
 
+    try{
+        createBackup(sourceFile1);
+        cout<<"Copia de seguridad creada para "<<sourceFile1<<" exitosamente."<<endl;
+        createBackup(sourceFile2);
+        cout<<"Copia de seguridad creada para "<<sourceFile2<<" exitosamente."<<endl;
+        createBackup(sourceFile3);
+        cout<<"Copia de seguridad creada para "<<sourceFile3<<" exitosamente."<<endl;
+    } catch(const exception& e){
+        cerr<<"Error al crear la copia de seguridad: "<<e.what()<<endl;
+    }
+
     return 0;
 }
+
