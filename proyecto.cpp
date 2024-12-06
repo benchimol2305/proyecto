@@ -8,6 +8,64 @@
 
 using namespace std;
 
+struct Usuario {
+    string nombre;
+    string contrasena;
+    string rol; // "admin", "manager" o "empleado"
+};
+
+void registrarUsuario(Usuario &usuario) {
+    cout << "Introduce el nombre del usuario: ";
+    cin >> usuario.nombre;
+    cout << "Introduce la contraseña del usuario: ";
+    cin >> usuario.contrasena;
+    cout << "Introduce el rol del usuario (admin, manager, empleado): ";
+    cin >> usuario.rol;
+}
+bool autenticarUsuario(const Usuario &usuario, string &rol) {
+    string nombre, contrasena;
+    cout << "Ingrese su nombre de usuario: ";
+    cin >> nombre;
+    cout << "Ingrese su contraseña: ";
+    cin >> contrasena;
+    cout << "Ingrese su rol (admin, manager, empleado): ";
+    cin >> rol;
+
+    if (usuario.nombre == nombre && usuario.contrasena == contrasena && usuario.rol == rol) {
+        return true;
+    }
+    return false;
+}
+void guardarUsuarios(const Usuario usuarios[], int cantidad) {
+    ofstream archivo("Usuarios.csv");
+    if (archivo.is_open()) {
+        for (int i = 0; i < cantidad; ++i) {
+            archivo << usuarios[i].nombre << ","
+                    << usuarios[i].contrasena << ","
+                    << usuarios[i].rol << endl;
+        }
+        archivo.close();
+    } else {
+        cerr << "No se pudo abrir el archivo de usuarios." << endl;
+    }
+}
+
+bool autenticarUsuario(const Usuario usuarios[], int cantidad, string &rol) {
+    string nombre, contrasena;
+    cout << "Ingrese su nombre de usuario: ";
+    cin >> nombre;
+    cout << "Ingrese su contraseña: ";
+    cin >> contrasena;
+
+    for (int i = 0; i < cantidad; ++i) {
+        if (usuarios[i].nombre == nombre && usuarios[i].contrasena == contrasena) {
+            rol = usuarios[i].rol;
+            return true;
+        }
+    }
+    return false;
+}
+
 struct vehiculo {
     string modelo;
     string marca;
