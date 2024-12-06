@@ -36,19 +36,6 @@ bool autenticarUsuario(const Usuario &usuario, string &rol) {
     }
     return false;
 }
-void guardarUsuarios(const Usuario usuarios[], int cantidad) {
-    ofstream archivo("Usuarios.csv");
-    if (archivo.is_open()) {
-        for (int i = 0; i < cantidad; ++i) {
-            archivo << usuarios[i].nombre << ","
-                    << usuarios[i].contrasena << ","
-                    << usuarios[i].rol << endl;
-        }
-        archivo.close();
-    } else {
-        cerr << "No se pudo abrir el archivo de usuarios." << endl;
-    }
-}
 
 bool autenticarUsuario(const Usuario usuarios[], int cantidad, string &rol) {
     string nombre, contrasena;
@@ -556,26 +543,36 @@ int main() {
     int opcion = 0;
     string cedulaABorrar;
     char continuar = 'n';
-    
-       do {
+
+  registrarUsuario(usuario);
+
+    if (!autenticarUsuario(usuario, rol)) {
+        cout << "Usuario o contraseña incorrectos." << endl;
+        return 1;
+    }
+	  do {
       
 	cout << "Â¿Que archivo desea ver?\n";
         cout << "1. Vehiculos\n";
         cout << "2. Clientes\n"; 
         cout << "3. Repuestos\n";
+	 if (rol == "admin"){	  
         cout << "4. Borrar Vehículo\n";
         cout << "5. Borrar Cliente\n";
-        cout << "6. Borrar Repuesto\n";
+        cout << "6. Borrar Repuesto\n";	 
         cout << "7. Actualizar Cliente\n";
         cout << "8. Actualizar vehiculo\n";
         cout << "9. Actualizar repuesto\n";
         cout << "10. Insertar Cliente\n";
         cout << "11. Insertar Vehiculo\n"; 
-        cout << "12. Insertar Repuesto\n"; 
-        cout << "desea buscar algo en especifico?\n";
+        cout << "12. Insertar Repuesto\n";
+	 }	 
+         if (rol == "manager"){
+	cout << "desea buscar algo en especifico?\n";
         cout << "13. Buscar Vehiculo\n";
         cout << "14. Buscar Cliente\n";
         cout << "15. Buscar Repuesto\n";
+	 }	 
         cout << "16. Confirmar Cambios\n";
         cout << "17. Salir\n";
         cout << "Ingrese su opcion: "; 
