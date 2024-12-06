@@ -241,6 +241,22 @@ void guardarRepuestos(const repuesto repuestos[], int cantidad) {
     }
 }
 
+void borrarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const string &placa) {
+    int i;
+    for (i = 0; i < cantidadVehiculos; ++i) {
+        if (vehiculos[i].placa == placa) {
+            break;
+        }
+    }
+    if (i < cantidadVehiculos) {
+        for (int j = i; j < cantidadVehiculos - 1; ++j) {
+            vehiculos[j] = vehiculos[j + 1];
+        }
+        cantidadVehiculos--;
+    }
+    guardarVehiculos(vehiculos, cantidadVehiculos);
+}
+
 void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos[], int &cantidadVehiculos, repuesto repuestos[], int &cantidadRepuestos, const string &cedula) {
     int i;
     for (i = 0; i < cantidadClientes; ++i) {
@@ -264,6 +280,21 @@ void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos
     guardarRepuestos(repuestos, cantidadRepuestos);
 }
 
+void borrarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const string &modelo_repuesto) {
+    int i;
+    for (i = 0; i < cantidadRepuestos; ++i) {
+        if (repuestos[i].modelo_repuesto == modelo_repuesto) {
+            break;
+        }
+    }
+    if (i < cantidadRepuestos) {
+        for (int j = i; j < cantidadRepuestos - 1; ++j) {
+            repuestos[j] = repuestos[j + 1];
+        }
+        cantidadRepuestos--;
+    }
+    guardarRepuestos(repuestos, cantidadRepuestos);
+}
 
 void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehiculos[], int cantidadVehiculos, const Cliente& clienteActualizado) {
     for (int i = 0; i < cantidadClientes; ++i) {
@@ -438,21 +469,26 @@ int main() {
     char continuar = 'n';
     
        do {
-        cout << "¿Que archivo desea ver?\n";
+      
+	cout << "Â¿Que archivo desea ver?\n";
         cout << "1. Vehiculos\n";
         cout << "2. Clientes\n"; 
         cout << "3. Repuestos\n";
-        cout << "4. Borrar Cliente\n";
-        cout << "5. Actualizar Cliente\n";
-        cout << "6. Insertar Cliente\n";
-        cout << "7. Insertar Vehiculo\n"; 
-        cout << "8. Insertar Repuesto\n"; 
+        cout << "4. Borrar Vehículo\n";
+        cout << "5. Borrar Cliente\n";
+        cout << "6. Borrar Repuesto\n";
+        cout << "7. Actualizar Cliente\n";
+        cout << "8. Actualizar vehiculo\n";
+        cout << "9. Actualizar repuesto\n";
+        cout << "10. Insertar Cliente\n";
+        cout << "11. Insertar Vehiculo\n"; 
+        cout << "12. Insertar Repuesto\n"; 
         cout << "desea buscar algo en especifico?\n";
-        cout << "9. Buscar Vehiculo\n";
-        cout << "10. Buscar Cliente\n";
-        cout << "11. Buscar Repuesto\n";
-        cout << "12. Confirmar Cambios\n";
-        cout << "13. Salir\n";
+        cout << "13. Buscar Vehiculo\n";
+        cout << "14. Buscar Cliente\n";
+        cout << "15. Buscar Repuesto\n";
+        cout << "16. Confirmar Cambios\n";
+        cout << "17. Salir\n";
         cout << "Ingrese su opcion: "; 
         cin >> opcion; 
         cin.ignore(100, '\n');
@@ -503,18 +539,34 @@ int main() {
                 }
                 break;
 
-            case 4:
-                leerClientes(clientes, cantidadClientes);
-                leervehiculos(vehiculos, cantidadVehiculos);
-                leerRepuestos(repuestos, cantidadRepuestos);
+           case 4: {
+                string placa;
+                cout << "Ingrese la placa del vehículo a borrar: ";
+                cin >> placa;
+                borrarVehiculo(vehiculos, cantidadVehiculos, placa);
+                cout << "vehiculo con placa " << placa << " ha sido borrado, y los datos asociados han sido eliminados." << endl;
+                break;
+            }
 
-                cout << "Introduce la cedula del cliente a borrar: ";
-                cin >> cedulaABorrar;
-                borrarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, repuestos, cantidadRepuestos, cedulaABorrar);
+            case 5:{
+                string cedula;
+                cout << "Ingrese la cédula del cliente a borrar: ";
+                cin >> cedula;
+                borrarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, repuestos, cantidadRepuestos, cedula);
                 cout << "Cliente con cedula " << cedulaABorrar << " ha sido borrado, y los datos asociados han sido actualizados." << endl;
                 break;
+            }
+            
+            case 6: {
+                string modelo_repuesto;
+                cout << "Ingrese el modelo del repuesto a borrar: ";
+                cin >> modelo_repuesto;
+                borrarRepuesto(repuestos, cantidadRepuestos, modelo_repuesto);
+                cout << "El modelo de repuesto" << modelo_repuesto << " ha sido borrado, y los datos asociados han sido actualizados." << endl;
+                break;
+            }
 
-            case 5:
+            case 7:
                 leerClientes(clientes, cantidadClientes);
                 leervehiculos(vehiculos, cantidadVehiculos);
 
@@ -541,7 +593,7 @@ int main() {
                 }
                 break;
 
-            case 6: {
+            case 8: {
                 Cliente nuevoCliente;
                 cout << "Introduce la cedula del nuevo cliente: ";
                 cin >> nuevoCliente.cedula;
@@ -563,7 +615,7 @@ int main() {
                 cout << "Cliente insertado con exito." << endl;
                 break;
             }
-            case 7: {
+            case 9: {
                 vehiculo nuevoVehiculo;
                 cout << "Introduce el modelo del nuevo vehiculo: ";
                 cin >> nuevoVehiculo.modelo;
@@ -594,7 +646,7 @@ int main() {
                 cout << "Vehiculo insertado con exito." << endl;
                 break;
             }
-            case 8: {
+            case 10: {
                 repuesto nuevoRepuesto;
                 cout << "Introduce el modelo del nuevo repuesto: ";
                 cin >> nuevoRepuesto.modelo_repuesto;
@@ -616,17 +668,17 @@ int main() {
                 cout << "Repuesto insertado con exito." << endl;
                 break;
             }
-        case 9: buscarVehiculo(vehiculos, cantidadVehiculos);
+        case 11: buscarVehiculo(vehiculos, cantidadVehiculos);
 		 break;
-	    case 10: buscarCliente(clientes, cantidadClientes); 
+	    case 12: buscarCliente(clientes, cantidadClientes); 
 		break;
-	    case 11: buscarRepuesto(repuestos, cantidadRepuestos); 
+	    case 13: buscarRepuesto(repuestos, cantidadRepuestos); 
 		break;
-        case 12: {
+        case 14: {
             confirmarCambios();
             break;
         }
-            case 13: {
+            case 15: {
                 cout << "Saliendo del programa.\n" << endl;
                 return 0;
             }
