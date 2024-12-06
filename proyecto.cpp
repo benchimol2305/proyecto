@@ -312,6 +312,37 @@ void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehicu
     guardarVehiculos(vehiculos, cantidadVehiculos);
 }
 
+void actualizarVehiculo(vehiculo vehiculos[], int cantidadVehiculos, Cliente clientes[], int cantidadClientes, const vehiculo& vehiculoActualizado) {
+    for (int i = 0; i < cantidadVehiculos; ++i) {
+        if (vehiculos[i].placa == vehiculoActualizado.placa) {
+            vehiculos[i] = vehiculoActualizado; 
+            break;
+        }
+    }
+    for (int i = 0; i < cantidadClientes; ++i) {
+        if (clientes[i].cedula == vehiculoActualizado.cedula_cliente) {
+            clientes[i].cedula = vehiculoActualizado.cedula_cliente; 
+        }
+    }
+    guardarVehiculos(vehiculos, cantidadVehiculos);
+    guardarClientes(clientes, cantidadClientes);
+}
+
+void actualizarRepuesto(repuesto repuestos[], int cantidadRepuestos, vehiculo vehiculos[], int cantidadVehiculos, const repuesto& repuestoActualizado) {
+    for (int i = 0; i < cantidadRepuestos; ++i) {
+        if (repuestos[i].modelo_repuesto == repuestoActualizado.modelo_repuesto) {
+            repuestos[i] = repuestoActualizado; 
+            break;
+        }
+    }
+    for (int i = 0; i < cantidadVehiculos; ++i) {
+        if (vehiculos[i].modelo == repuestoActualizado.modelo_carro) {
+            vehiculos[i].modelo = repuestoActualizado.modelo_carro; 
+        }
+    }
+    guardarRepuestos(repuestos, cantidadRepuestos);
+    guardarVehiculos(vehiculos, cantidadVehiculos);
+}
 
 void insertarCliente(Cliente clientes[], int &cantidadClientes, const Cliente& nuevoCliente) {
     if (cantidadClientes < 1000) {
@@ -566,13 +597,13 @@ int main() {
                 break;
             }
 
-            case 7:
+           case 7:
                 leerClientes(clientes, cantidadClientes);
                 leervehiculos(vehiculos, cantidadVehiculos);
 
                 {
                     Cliente clienteActualizado;
-                    cout << "Introduce la cédula del cliente a actualizar: ";
+                    cout << "Introduce la cedula del cliente a actualizar: ";
                     cin >> clienteActualizado.cedula;
                     cout << "Introduce el nuevo nombre: ";
                     cin.ignore(); 
@@ -581,9 +612,9 @@ int main() {
                     getline(cin, clienteActualizado.apellido);
                     cout << "Introduce el nuevo email: ";
                     getline(cin, clienteActualizado.email);
-                    cout << "Introduce la cantidad de vehículos rentados: ";
+                    cout << "Introduce la cantidad de vehÃ­culos rentados: ";
                     getline(cin, clienteActualizado.cantidad_vehiculos_rentados);
-                    cout << "Introduce la nueva dirección: ";
+                    cout << "Introduce la nueva direccion: ";
                     getline(cin, clienteActualizado.direccion);
                     cout << "Esta activo? (1 para si, 0 para no): ";
                     cin >> clienteActualizado.activo;
@@ -592,8 +623,71 @@ int main() {
                     cout << "Cliente con cedula " << clienteActualizado.cedula << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
                 }
                 break;
+                
+            case 8:
+            	leerClientes(clientes, cantidadClientes);
+                leervehiculos(vehiculos, cantidadVehiculos);
 
-            case 8: {
+      {          
+            vehiculo vehiculoActualizado;
+            cout << "Introduce la placa del vehículo a actualizar: ";
+            cin >> vehiculoActualizado.placa;
+            cout << "Introduce el nuevo modelo: ";
+            cin.ignore(); 
+            getline(cin, vehiculoActualizado.modelo);
+            cout << "Introduce la nueva marca: ";
+            getline(cin, vehiculoActualizado.marca);
+            cout << "Introduce el nuevo color: ";
+            getline(cin, vehiculoActualizado.color);
+            cout << "Introduce el año: ";
+            getline(cin, vehiculoActualizado.year);
+            cout << "Introduce el kilometraje: ";
+            getline(cin, vehiculoActualizado.kilometraje);
+            cout << "Está rentado? (1 para sí, 0 para no): ";
+            cin >> vehiculoActualizado.rentado;
+            cin.ignore();
+            cout << "Introduce el tipo de motor: ";
+            getline(cin, vehiculoActualizado.motor);
+            cout << "Introduce el precio de renta: ";
+            getline(cin, vehiculoActualizado.precio_renta);
+            cout << "Introduce la cédula del cliente: ";
+            getline(cin, vehiculoActualizado.cedula_cliente);
+            cout << "Introduce la fecha de entrega: ";
+            getline(cin, vehiculoActualizado.fecha_entrega);
+    actualizarVehiculo(vehiculos, cantidadVehiculos, clientes, cantidadClientes, vehiculoActualizado);
+    cout << "Vehículo con placa " << vehiculoActualizado.placa << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+}
+           break;
+
+        case 9:
+        	
+        leervehiculos(vehiculos, cantidadVehiculos);
+        leerRepuestos(repuestos, cantidadRepuestos);
+
+{
+    repuesto repuestoActualizado;
+    cout << "Introduce el modelo del repuesto a actualizar: ";
+    cin >> repuestoActualizado.modelo_repuesto;
+    cout << "Introduce la nueva marca: ";
+    cin.ignore(); 
+    getline(cin, repuestoActualizado.marca_repuesto);
+    cout << "Introduce el nuevo nombre del repuesto: ";
+    getline(cin, repuestoActualizado.nombre_repuesto);
+    cout << "Introduce el modelo del carro: ";
+    getline(cin, repuestoActualizado.modelo_carro);
+    cout << "Introduce el año del auto: ";
+    getline(cin, repuestoActualizado.year_auto);
+    cout << "Introduce el precio: ";
+    getline(cin, repuestoActualizado.precio);
+    cout << "Hay existencias? (1 para sí, 0 para no): ";
+    cin >> repuestoActualizado.existencias;
+
+    actualizarRepuesto(repuestos, cantidadRepuestos, vehiculos, cantidadVehiculos, repuestoActualizado);
+    cout << "Repuesto con modelo " << repuestoActualizado.modelo_repuesto << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+}
+            break;
+
+            case 10: {
                 Cliente nuevoCliente;
                 cout << "Introduce la cedula del nuevo cliente: ";
                 cin >> nuevoCliente.cedula;
@@ -615,7 +709,7 @@ int main() {
                 cout << "Cliente insertado con exito." << endl;
                 break;
             }
-            case 9: {
+            case 11: {
                 vehiculo nuevoVehiculo;
                 cout << "Introduce el modelo del nuevo vehiculo: ";
                 cin >> nuevoVehiculo.modelo;
@@ -646,7 +740,7 @@ int main() {
                 cout << "Vehiculo insertado con exito." << endl;
                 break;
             }
-            case 10: {
+            case 12: {
                 repuesto nuevoRepuesto;
                 cout << "Introduce el modelo del nuevo repuesto: ";
                 cin >> nuevoRepuesto.modelo_repuesto;
@@ -668,17 +762,17 @@ int main() {
                 cout << "Repuesto insertado con exito." << endl;
                 break;
             }
-        case 11: buscarVehiculo(vehiculos, cantidadVehiculos);
+        case 13: buscarVehiculo(vehiculos, cantidadVehiculos);
 		 break;
-	    case 12: buscarCliente(clientes, cantidadClientes); 
+	    case 14: buscarCliente(clientes, cantidadClientes); 
 		break;
-	    case 13: buscarRepuesto(repuestos, cantidadRepuestos); 
+	    case 15: buscarRepuesto(repuestos, cantidadRepuestos); 
 		break;
-        case 14: {
+        case 16: {
             confirmarCambios();
             break;
         }
-            case 15: {
+            case 17: {
                 cout << "Saliendo del programa.\n" << endl;
                 return 0;
             }
