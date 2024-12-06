@@ -556,23 +556,23 @@ int main() {
         cout << "1. Vehiculos\n";
         cout << "2. Clientes\n"; 
         cout << "3. Repuestos\n";
-	 if (rol == "admin"){	  
+	if (rol == "admin" ) {	  
         cout << "4. Borrar Vehículo\n";
         cout << "5. Borrar Cliente\n";
-        cout << "6. Borrar Repuesto\n";	 
+        cout << "6. Borrar Repuesto\n";	
         cout << "7. Actualizar Cliente\n";
         cout << "8. Actualizar vehiculo\n";
         cout << "9. Actualizar repuesto\n";
+	}
+	 if (rol == "admin" || rol == "manager") {	  
         cout << "10. Insertar Cliente\n";
         cout << "11. Insertar Vehiculo\n"; 
         cout << "12. Insertar Repuesto\n";
-	 }	 
-         if (rol == "manager"){
+	 }
 	cout << "desea buscar algo en especifico?\n";
         cout << "13. Buscar Vehiculo\n";
         cout << "14. Buscar Cliente\n";
         cout << "15. Buscar Repuesto\n";
-	 }	 
         cout << "16. Confirmar Cambios\n";
         cout << "17. Salir\n";
         cout << "Ingrese su opcion: "; 
@@ -625,124 +625,143 @@ int main() {
                 }
                 break;
 
-           case 4: {
-                string placa;
-                cout << "Ingrese la placa del vehículo a borrar: ";
-                cin >> placa;
-                borrarVehiculo(vehiculos, cantidadVehiculos, placa);
-                cout << "vehiculo con placa " << placa << " ha sido borrado, y los datos asociados han sido eliminados." << endl;
+           case 4: 
+		   if (rol == "admin") {
+                    string placa;
+                    cout << "Ingrese la placa del vehículo a borrar: ";
+                    cin >> placa;
+                    borrarVehiculo(vehiculos, cantidadVehiculos, placa);
+                } else {
+                    cout << "No tiene permiso para realizar esta acción." << endl;
+                }
                 break;
-            }
 
-            case 5:{
-                string cedula;
-                cout << "Ingrese la cédula del cliente a borrar: ";
-                cin >> cedula;
-                borrarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, repuestos, cantidadRepuestos, cedula);
-                cout << "Cliente con cedula " << cedulaABorrar << " ha sido borrado, y los datos asociados han sido actualizados." << endl;
-                break;
-            }
+            case 5:
+		    if (rol == "admin") {
+                    string cedula;
+                    cout << "Ingrese la cédula del cliente a borrar: ";
+                    cin >> cedula;
+                    borrarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, repuestos, cantidadRepuestos, cedula);
+                } else {
+                    cout << "No tiene permiso para realizar esta acción." << endl;
+                }
             
-            case 6: {
-                string modelo_repuesto;
-                cout << "Ingrese el modelo del repuesto a borrar: ";
-                cin >> modelo_repuesto;
-                borrarRepuesto(repuestos, cantidadRepuestos, modelo_repuesto);
-                cout << "El modelo de repuesto" << modelo_repuesto << " ha sido borrado, y los datos asociados han sido actualizados." << endl;
+            case 6:  if (rol == "admin") {
+                    string modelo_repuesto;
+                    cout << "Ingrese el modelo del repuesto a borrar: ";
+                    cin >> modelo_repuesto;
+                    borrarRepuesto(repuestos, cantidadRepuestos, modelo_repuesto);
+                } else {
+                    cout << "No tiene permiso para realizar esta acción." << endl;
+                }
                 break;
-            }
-
+        
            case 7:
-                leerClientes(clientes, cantidadClientes);
-                leervehiculos(vehiculos, cantidadVehiculos);
+                if (rol == "admin") {
+                    leerClientes(clientes, cantidadClientes);
+                    leervehiculos(vehiculos, cantidadVehiculos);
 
-                {
-                    Cliente clienteActualizado;
-                    cout << "Introduce la cedula del cliente a actualizar: ";
-                    cin >> clienteActualizado.cedula;
-                    cout << "Introduce el nuevo nombre: ";
-                    cin.ignore(); 
-                    getline(cin, clienteActualizado.nombre);
-                    cout << "Introduce el nuevo apellido: ";
-                    getline(cin, clienteActualizado.apellido);
-                    cout << "Introduce el nuevo email: ";
-                    getline(cin, clienteActualizado.email);
-                    cout << "Introduce la cantidad de vehÃ­culos rentados: ";
-                    getline(cin, clienteActualizado.cantidad_vehiculos_rentados);
-                    cout << "Introduce la nueva direccion: ";
-                    getline(cin, clienteActualizado.direccion);
-                    cout << "Esta activo? (1 para si, 0 para no): ";
-                    cin >> clienteActualizado.activo;
+                    {
+                        Cliente clienteActualizado;
+                        cout << "Introduce la cedula del cliente a actualizar: ";
+                        cin >> clienteActualizado.cedula;
+                        cout << "Introduce el nuevo nombre: ";
+                        cin.ignore(); 
+                        getline(cin, clienteActualizado.nombre);
+                        cout << "Introduce el nuevo apellido: ";
+                        getline(cin, clienteActualizado.apellido);
+                        cout << "Introduce el nuevo email: ";
+                        getline(cin, clienteActualizado.email);
+                        cout << "Introduce la cantidad de vehículos rentados: ";
+                        getline(cin, clienteActualizado.cantidad_vehiculos_rentados);
+                        cout << "Introduce la nueva direccion: ";
+                        getline(cin, clienteActualizado.direccion);
+                        cout << "Está activo? (1 para sí, 0 para no): ";
+                        cin >> clienteActualizado.activo;
 
-                    actualizarCliente(clientes, cantidadClientes, vehiculos, cantidadVehiculos, clienteActualizado);
-                    cout << "Cliente con cedula " << clienteActualizado.cedula << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+                       void actualizarCliente(Cliente clientes[], int cantidadClientes, const Cliente &clienteActualizado);
+                        cout << "Cliente con cedula " << clienteActualizado.cedula << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+                    }
+                } else {
+                    cout << "No tiene permiso para realizar esta acción." << endl;
                 }
                 break;
                 
             case 8:
-            	leerClientes(clientes, cantidadClientes);
-                leervehiculos(vehiculos, cantidadVehiculos);
+            	if (rol == "admin") {
+                    leerClientes(clientes, cantidadClientes);
+                    leervehiculos(vehiculos, cantidadVehiculos);
 
-      {          
-            vehiculo vehiculoActualizado;
-            cout << "Introduce la placa del vehículo a actualizar: ";
-            cin >> vehiculoActualizado.placa;
-            cout << "Introduce el nuevo modelo: ";
-            cin.ignore(); 
-            getline(cin, vehiculoActualizado.modelo);
-            cout << "Introduce la nueva marca: ";
-            getline(cin, vehiculoActualizado.marca);
-            cout << "Introduce el nuevo color: ";
-            getline(cin, vehiculoActualizado.color);
-            cout << "Introduce el año: ";
-            getline(cin, vehiculoActualizado.year);
-            cout << "Introduce el kilometraje: ";
-            getline(cin, vehiculoActualizado.kilometraje);
-            cout << "Está rentado? (1 para sí, 0 para no): ";
-            cin >> vehiculoActualizado.rentado;
-            cin.ignore();
-            cout << "Introduce el tipo de motor: ";
-            getline(cin, vehiculoActualizado.motor);
-            cout << "Introduce el precio de renta: ";
-            getline(cin, vehiculoActualizado.precio_renta);
-            cout << "Introduce la cédula del cliente: ";
-            getline(cin, vehiculoActualizado.cedula_cliente);
-            cout << "Introduce la fecha de entrega: ";
-            getline(cin, vehiculoActualizado.fecha_entrega);
-    actualizarVehiculo(vehiculos, cantidadVehiculos, clientes, cantidadClientes, vehiculoActualizado);
-    cout << "Vehículo con placa " << vehiculoActualizado.placa << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
-}
-           break;
+                    {
+                        vehiculo vehiculoActualizado;
+                        cout << "Introduce la placa del vehículo a actualizar: ";
+                        cin >> vehiculoActualizado.placa;
+                        cout << "Introduce el nuevo modelo: ";
+                        cin.ignore(); 
+                        getline(cin, vehiculoActualizado.modelo);
+                        cout << "Introduce la nueva marca: ";
+                        getline(cin, vehiculoActualizado.marca);
+                        cout << "Introduce el nuevo color: ";
+                        getline(cin, vehiculoActualizado.color);
+                        cout << "Introduce el año: ";
+                        getline(cin, vehiculoActualizado.year);
+                        cout << "Introduce el kilometraje: ";
+                        getline(cin, vehiculoActualizado.kilometraje);
+                        cout << "Está rentado? (1 para sí, 0 para no): ";
+                        cin >> vehiculoActualizado.rentado;
+                        cin.ignore();
+                        cout << "Introduce el tipo de motor: ";
+                        getline(cin, vehiculoActualizado.motor);
+                        cout << "Introduce el precio de renta: ";
+                        getline(cin, vehiculoActualizado.precio_renta);
+                        cout << "Introduce la cédula del cliente: ";
+                        getline(cin, vehiculoActualizado.cedula_cliente);
+                        cout << "Introduce la fecha de entrega: ";
+                        getline(cin, vehiculoActualizado.fecha_entrega);
+
+                        void actualizarVehiculo(vehiculo vehiculos[], int cantidadVehiculos, const vehiculo &vehiculoActualizado);
+                        cout << "Vehículo con placa " << vehiculoActualizado.placa << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+                    }
+                } else {
+                    cout << "No tiene permiso para realizar esta acción." << endl;
+                }
+                break;
 
         case 9:
         	
+        if (rol == "admin" ) {
         leervehiculos(vehiculos, cantidadVehiculos);
         leerRepuestos(repuestos, cantidadRepuestos);
 
-{
-    repuesto repuestoActualizado;
-    cout << "Introduce el modelo del repuesto a actualizar: ";
-    cin >> repuestoActualizado.modelo_repuesto;
-    cout << "Introduce la nueva marca: ";
-    cin.ignore(); 
-    getline(cin, repuestoActualizado.marca_repuesto);
-    cout << "Introduce el nuevo nombre del repuesto: ";
-    getline(cin, repuestoActualizado.nombre_repuesto);
-    cout << "Introduce el modelo del carro: ";
-    getline(cin, repuestoActualizado.modelo_carro);
-    cout << "Introduce el año del auto: ";
-    getline(cin, repuestoActualizado.year_auto);
-    cout << "Introduce el precio: ";
-    getline(cin, repuestoActualizado.precio);
-    cout << "Hay existencias? (1 para sí, 0 para no): ";
-    cin >> repuestoActualizado.existencias;
+        {
+            repuesto repuestoActualizado;
+            cout << "Introduce el modelo del repuesto a actualizar: ";
+            cin >> repuestoActualizado.modelo_repuesto;
+            cout << "Introduce la nueva marca: ";
+            cin.ignore(); 
+            getline(cin, repuestoActualizado.marca_repuesto);
+            cout << "Introduce el nuevo nombre del repuesto: ";
+            getline(cin, repuestoActualizado.nombre_repuesto);
+            cout << "Introduce el modelo del carro: ";
+            getline(cin, repuestoActualizado.modelo_carro);
+            cout << "Introduce el año del auto: ";
+            getline(cin, repuestoActualizado.year_auto);
+            cout << "Introduce el precio: ";
+            getline(cin, repuestoActualizado.precio);
+            cout << "Hay existencias? (1 para sí, 0 para no): ";
+            cin >> repuestoActualizado.existencias;
 
-    actualizarRepuesto(repuestos, cantidadRepuestos, vehiculos, cantidadVehiculos, repuestoActualizado);
-    cout << "Repuesto con modelo " << repuestoActualizado.modelo_repuesto << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
-}
-            break;
+           void actualizarRepuesto(repuesto repuestos[], int cantidadRepuestos, const repuesto &repuestoActualizado);
+            cout << "Repuesto con modelo " << repuestoActualizado.modelo_repuesto << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
+        }
+    } else {
+        cout << "No tiene permiso para realizar esta acción." << endl;
+    }
+    break;
 
-            case 10: {
+            case 10: 
+		if (rol == "admin" || rol == "manager") {
+		{
                 Cliente nuevoCliente;
                 cout << "Introduce la cedula del nuevo cliente: ";
                 cin >> nuevoCliente.cedula;
@@ -762,9 +781,11 @@ int main() {
 
                 insertarCliente(clientes, cantidadClientes, nuevoCliente);
                 cout << "Cliente insertado con exito." << endl;
-                break;
-            }
-            case 11: {
+		} else {
+        cout << "No tiene permiso para realizar esta acción." << endl;
+    } break;
+            
+            case 11:  if (rol == "admin" || rol == "manager"){
                 vehiculo nuevoVehiculo;
                 cout << "Introduce el modelo del nuevo vehiculo: ";
                 cin >> nuevoVehiculo.modelo;
@@ -793,9 +814,12 @@ int main() {
 
                 insertarVehiculo(vehiculos, cantidadVehiculos, nuevoVehiculo);
                 cout << "Vehiculo insertado con exito." << endl;
-                break;
-            }
-            case 12: {
+	    }else {
+        cout << "No tiene permiso para realizar esta acción." << endl;
+    }
+        break;
+			
+		case 12:  if (rol == "admin" || rol == "manager") {
                 repuesto nuevoRepuesto;
                 cout << "Introduce el modelo del nuevo repuesto: ";
                 cin >> nuevoRepuesto.modelo_repuesto;
@@ -815,6 +839,9 @@ int main() {
 
                 insertarRepuesto(repuestos, cantidadRepuestos, nuevoRepuesto);
                 cout << "Repuesto insertado con exito." << endl;
+		} else {
+        cout << "No tiene permiso para realizar esta acción." << endl;
+    }
                 break;
             }
         case 13: buscarVehiculo(vehiculos, cantidadVehiculos);
