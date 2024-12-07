@@ -78,7 +78,8 @@ public:
     string direccion;
 };
 
-struct repuesto {
+class Repuesto {
+public:
     string modelo_repuesto;
     string marca_repuesto;
     string nombre_repuesto;
