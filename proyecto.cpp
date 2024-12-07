@@ -543,10 +543,12 @@ int main() {
     int opcion = 0;
     string cedulaABorrar;
     char continuar = 'n';
+    Usuario user;
+    string rol;
 
-  registrarUsuario(usuario);
+  registrarUsuario(user);
 
-    if (!autenticarUsuario(usuario, rol)) {
+    if (!autenticarUsuario(user, rol)) {
         cout << "Usuario o contraseña incorrectos." << endl;
         return 1;
     }
@@ -781,8 +783,6 @@ int main() {
 
                 insertarCliente(clientes, cantidadClientes, nuevoCliente);
                 cout << "Cliente insertado con exito." << endl;
-		} else {
-        cout << "No tiene permiso para realizar esta acción." << endl;
     } break;
             
             case 11:  if (rol == "admin" || rol == "manager"){
