@@ -52,8 +52,8 @@ bool autenticarUsuario(const Usuario usuarios[], int cantidad, string &rol) {
     }
     return false;
 }
-
-struct vehiculo {
+class Vehiculo {
+public:
     string modelo;
     string marca;
     string placa;
@@ -67,7 +67,8 @@ struct vehiculo {
     string fecha_entrega;
 };
 
-struct Cliente {
+class Cliente {
+public:
     string cedula;
     string nombre;
     string apellido;
