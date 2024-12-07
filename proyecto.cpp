@@ -89,7 +89,7 @@ public:
     bool existencias;
 };
 
-void leervehiculos(vehiculo vehiculos[], int &cantidad) {
+void leervehiculos(Vehiculo vehiculos[], int &cantidad) {
     ifstream archivo("Vehiculos.csv");
     string linea;
     cantidad = 0;
@@ -133,7 +133,7 @@ void leerClientes(Cliente clientes[], int &cantidad) {
     archivo.close();
 }
 
-void leerRepuestos(repuesto repuestos[], int &cantidad) {
+void leerRepuestos(Repuesto repuestos[], int &cantidad) {
     ifstream archivo("Repuestos.csv");
     string linea;
     cantidad = 0;
@@ -153,7 +153,7 @@ void leerRepuestos(repuesto repuestos[], int &cantidad) {
     archivo.close();
 }
 
-void buscarVehiculo(const vehiculo vehiculos[], int cantidad) {
+void buscarVehiculo(const Vehiculo vehiculos[], int cantidad) {
     string modeloBuscado;
     cout << "Ingrese el modelo del vehiculo que desea buscar: ";
     cin >> modeloBuscado;
@@ -206,7 +206,7 @@ if (!encontrado) {
     }
 }
 
-void buscarRepuesto(const repuesto repuestos[], int cantidad) {
+void buscarRepuesto(const Repuesto repuestos[], int cantidad) {
     string marcaBuscada;
     cout << "Ingrese la marca del repuesto que desea buscar: ";
     cin >> marcaBuscada;
@@ -230,7 +230,7 @@ bool encontrado = false;
     }
 }
 
-void guardarVehiculos(const vehiculo vehiculos[], int cantidad) {
+void guardarVehiculos(const Vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos.csv");
     if (archivo.is_open()) {
         for (int i = 0; i < cantidad; ++i) {
@@ -270,7 +270,7 @@ void guardarClientes(const Cliente clientes[], int cantidad) {
     }
 }
 
-void guardarRepuestos(const repuesto repuestos[], int cantidad) {
+void guardarRepuestos(const Repuesto repuestos[], int cantidad) {
     ofstream archivo("Repuestos.csv");
     if (archivo.is_open()) {
         for (int i = 0; i < cantidad; ++i) {
@@ -288,7 +288,7 @@ void guardarRepuestos(const repuesto repuestos[], int cantidad) {
     }
 }
 
-void borrarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const string &placa) {
+void borrarVehiculo(Vehiculo vehiculos[], int &cantidadVehiculos, const string &placa) {
     int i;
     for (i = 0; i < cantidadVehiculos; ++i) {
         if (vehiculos[i].placa == placa) {
@@ -304,7 +304,7 @@ void borrarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const string &
     guardarVehiculos(vehiculos, cantidadVehiculos);
 }
 
-void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos[], int &cantidadVehiculos, repuesto repuestos[], int &cantidadRepuestos, const string &cedula) {
+void borrarCliente(Cliente clientes[], int &cantidadClientes, Vehiculo vehiculos[], int &cantidadVehiculos, Repuesto repuestos[], int &cantidadRepuestos, const string &cedula) {
     int i;
     for (i = 0; i < cantidadClientes; ++i) {
         if (clientes[i].cedula == cedula) {
@@ -327,7 +327,7 @@ void borrarCliente(Cliente clientes[], int &cantidadClientes, vehiculo vehiculos
     guardarRepuestos(repuestos, cantidadRepuestos);
 }
 
-void borrarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const string &modelo_repuesto) {
+void borrarRepuesto(Repuesto repuestos[], int &cantidadRepuestos, const string &modelo_repuesto) {
     int i;
     for (i = 0; i < cantidadRepuestos; ++i) {
         if (repuestos[i].modelo_repuesto == modelo_repuesto) {
@@ -343,7 +343,7 @@ void borrarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const string &
     guardarRepuestos(repuestos, cantidadRepuestos);
 }
 
-void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehiculos[], int cantidadVehiculos, const Cliente& clienteActualizado) {
+void actualizarCliente(Cliente clientes[], int cantidadClientes, Vehiculo vehiculos[], int cantidadVehiculos, const Cliente& clienteActualizado) {
     for (int i = 0; i < cantidadClientes; ++i) {
         if (clientes[i].cedula == clienteActualizado.cedula) {
             clientes[i] = clienteActualizado; 
@@ -359,7 +359,7 @@ void actualizarCliente(Cliente clientes[], int cantidadClientes, vehiculo vehicu
     guardarVehiculos(vehiculos, cantidadVehiculos);
 }
 
-void actualizarVehiculo(vehiculo vehiculos[], int cantidadVehiculos, Cliente clientes[], int cantidadClientes, const vehiculo& vehiculoActualizado) {
+void actualizarVehiculo(Vehiculo vehiculos[], int cantidadVehiculos, Cliente clientes[], int cantidadClientes, const Vehiculo& vehiculoActualizado) {
     for (int i = 0; i < cantidadVehiculos; ++i) {
         if (vehiculos[i].placa == vehiculoActualizado.placa) {
             vehiculos[i] = vehiculoActualizado; 
@@ -375,7 +375,7 @@ void actualizarVehiculo(vehiculo vehiculos[], int cantidadVehiculos, Cliente cli
     guardarClientes(clientes, cantidadClientes);
 }
 
-void actualizarRepuesto(repuesto repuestos[], int cantidadRepuestos, vehiculo vehiculos[], int cantidadVehiculos, const repuesto& repuestoActualizado) {
+void actualizarRepuesto(Repuesto repuestos[], int cantidadRepuestos, Vehiculo vehiculos[], int cantidadVehiculos, const Repuesto& repuestoActualizado) {
     for (int i = 0; i < cantidadRepuestos; ++i) {
         if (repuestos[i].modelo_repuesto == repuestoActualizado.modelo_repuesto) {
             repuestos[i] = repuestoActualizado; 
@@ -402,7 +402,7 @@ void insertarCliente(Cliente clientes[], int &cantidadClientes, const Cliente& n
 }
 
 
-void insertarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const vehiculo& nuevoVehiculo) {
+void insertarVehiculo(Vehiculo vehiculos[], int &cantidadVehiculos, const Vehiculo& nuevoVehiculo) {
     if (cantidadVehiculos < 1000) {
         vehiculos[cantidadVehiculos] = nuevoVehiculo;
         cantidadVehiculos++;
@@ -413,7 +413,7 @@ void insertarVehiculo(vehiculo vehiculos[], int &cantidadVehiculos, const vehicu
 }
 
 
-void insertarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const repuesto& nuevoRepuesto) {
+void insertarRepuesto(Repuesto repuestos[], int &cantidadRepuestos, const Repuesto& nuevoRepuesto) {
     if (cantidadRepuestos < 1000) {
         repuestos[cantidadRepuestos] = nuevoRepuesto;
         cantidadRepuestos++;
@@ -423,7 +423,7 @@ void insertarRepuesto(repuesto repuestos[], int &cantidadRepuestos, const repues
     }
 }
 
-void guardarVehiculosTemp(const vehiculo vehiculos[], int cantidad) {
+void guardarVehiculosTemp(const Vehiculo vehiculos[], int cantidad) {
     ofstream archivo("Vehiculos_temp.csv");
     if (archivo.is_open()) {
         for (int i = 0; i < cantidad; ++i) {
@@ -463,7 +463,7 @@ void guardarClientesTemp(const Cliente clientes[], int cantidad) {
     }
 }
 
-void guardarRepuestosTemp(const repuesto repuestos[], int cantidad) {
+void guardarRepuestosTemp(const Repuesto repuestos[], int cantidad) {
     ofstream archivo("Repuestos_temp.csv");
     if (archivo.is_open()) {
         for (int i = 0; i < cantidad; ++i) {
@@ -536,9 +536,9 @@ int main() {
     string sourceFile1 = "Vehiculos.csv";
     string sourceFile2 = "Repuestos.csv";
     string sourceFile3 = "Clientes.csv";
-    vehiculo vehiculos[1000];
+    Vehiculo vehiculos[1000];
     Cliente clientes[1000];
-    repuesto repuestos[1000];
+    Repuesto repuestos[1000];
     int cantidadVehiculos = 0;
     int cantidadClientes = 0;
     int cantidadRepuestos = 0;
@@ -697,7 +697,7 @@ int main() {
                     leervehiculos(vehiculos, cantidadVehiculos);
 
                     {
-                        vehiculo vehiculoActualizado;
+                        Vehiculo vehiculoActualizado;
                         cout << "Introduce la placa del vehículo a actualizar: ";
                         cin >> vehiculoActualizado.placa;
                         cout << "Introduce el nuevo modelo: ";
@@ -723,7 +723,7 @@ int main() {
                         cout << "Introduce la fecha de entrega: ";
                         getline(cin, vehiculoActualizado.fecha_entrega);
 
-                        void actualizarVehiculo(vehiculo vehiculos[], int cantidadVehiculos, const vehiculo &vehiculoActualizado);
+                        void actualizarVehiculo(Vehiculo vehiculos[], int cantidadVehiculos, const Vehiculo &vehiculoActualizado);
                         cout << "Vehículo con placa " << vehiculoActualizado.placa << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
                     }
                 } else {
@@ -738,7 +738,7 @@ int main() {
         leerRepuestos(repuestos, cantidadRepuestos);
 
         {
-            repuesto repuestoActualizado;
+            Repuesto repuestoActualizado;
             cout << "Introduce el modelo del repuesto a actualizar: ";
             cin >> repuestoActualizado.modelo_repuesto;
             cout << "Introduce la nueva marca: ";
@@ -755,7 +755,7 @@ int main() {
             cout << "Hay existencias? (1 para sí, 0 para no): ";
             cin >> repuestoActualizado.existencias;
 
-           void actualizarRepuesto(repuesto repuestos[], int cantidadRepuestos, const repuesto &repuestoActualizado);
+           void actualizarRepuesto(Repuesto repuestos[], int cantidadRepuestos, const Repuesto &repuestoActualizado);
             cout << "Repuesto con modelo " << repuestoActualizado.modelo_repuesto << " ha sido actualizado y los datos asociados han sido actualizados." << endl;
         }
     } else {
@@ -788,7 +788,7 @@ int main() {
     } break;
             
             case 11:  if (rol == "admin" || rol == "manager"){
-                vehiculo nuevoVehiculo;
+                Vehiculo nuevoVehiculo;
                 cout << "Introduce el modelo del nuevo vehiculo: ";
                 cin >> nuevoVehiculo.modelo;
                 cout << "Introduce la marca del nuevo vehiculo: ";
@@ -822,7 +822,7 @@ int main() {
         break;
 			
 		case 12:  if (rol == "admin" || rol == "manager") {
-                repuesto nuevoRepuesto;
+                Repuesto nuevoRepuesto;
                 cout << "Introduce el modelo del nuevo repuesto: ";
                 cin >> nuevoRepuesto.modelo_repuesto;
                 cout << "Introduce la marca del nuevo repuesto: ";
