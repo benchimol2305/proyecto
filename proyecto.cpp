@@ -551,12 +551,12 @@ int main() {
   registrarUsuario(user);
 
     if (!autenticarUsuario(user, rol)) {
-        cout << "Usuario o contraseña incorrectos." << endl;
+        cout << "Usuario o contrasena incorrectos." << endl;
         return 1;
     }
 	  do {
       
-	cout << "Â¿Que archivo desea ver?\n";
+	cout << "A¿Que archivo desea ver?\n";
         cout << "1. Vehiculos\n";
         cout << "2. Clientes\n"; 
         cout << "3. Repuestos\n";
