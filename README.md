@@ -9,9 +9,9 @@ Desde la terminal de Visual Studio Code
    git clone https://github.com/benchimol2305/proyecto
 2. Una vez clonado el repositorio, para ubicarte en la carpeta, usa el siguiente comando desde la terminal:
    cd proyecto
-3.Una vez ubicado en la carpeta, compilar el archivo usando en la terminal:
+3. Una vez ubicado en la carpeta, compilar el archivo usando en la terminal:
 g++ Controlador.cpp -o Controlador
-4.Una vez compilador ejecutar con el siguiente comando:
+4. Una vez compilador ejecutar con el siguiente comando:
 ./Controlador
 5. El programa te presentará un menú interactivo donde podrás:
  - Ver los datos de vehículos, clientes y repuestos. 
